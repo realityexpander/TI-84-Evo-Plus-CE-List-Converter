@@ -1,4 +1,4 @@
-# TI-84 Evo / Plus CE List Converter
+# TI-84 Evo <-> Plus CE List Translator / Converter / Editor
 
 A single-page, browser-based editor and converter for TI calculator real-number list files.
 
