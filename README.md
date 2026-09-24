@@ -10,26 +10,33 @@ All conversion and editing happens locally in the browser. No files are uploaded
 
 - Import TI-84 Plus CE real-number lists in `.8xl` format.
 - Import TI-84 Evo real-number lists in `.8xl2` format.
-- Load up to six lists into columns 1 through 6.
-- Automatically use the loaded filename, without the extension, as the editable column header.
+- Load up to six lists into **List 1** through **List 6**.
+- Automatically use the loaded filename, without the extension, as the editable list header.
 - Edit list values directly in the browser.
 - Supports integers, decimal values, and scientific notation such as `1.25e-6`.
-- Add new values to any list.
-- Clear an individual column.
-- Load a file directly into a specific column with that column's **Load .8xl\*** button.
+- Press **Enter** in a value field to insert a new row directly below it containing `0`; the new `0` is automatically selected and ready to replace by typing.
+- Add new values to any list with **+ Add value**.
+- Hover over a value field to reveal a **Ⓧ** control for deleting that item from that list only.
+- Clear an individual list after confirmation.
+- Clear all six lists at once with **Clear All**, after confirmation.
+- Load a file directly into a specific list with that list's **Load .8xl\*** button.
   - Accepts either `.8xl` or `.8xl2`.
-  - The selected file is loaded into that exact column regardless of its filename or internal list name.
-- Drag and drop a `.8xl` or `.8xl2` file directly onto any column header.
-  - Each editable column name is surrounded by a dashed border to identify it as a drop target.
+  - The selected file is loaded into that exact list regardless of its filename or internal list name.
+- Drag and drop a `.8xl` or `.8xl2` file directly onto any list header.
+  - Each editable list name is surrounded by a dashed border to identify it as a drop target.
   - The target highlights while a file is dragged over it.
-  - The dropped file is loaded into that exact column, replacing any existing data there.
-- Export a single column as:
+  - The dropped file is loaded into that exact list, replacing any existing data there.
+- Drag and drop multiple `.8xl` and/or `.8xl2` files onto the top **Drag & Drop Here to Import All** target.
+  - Imports up to the first six dropped files.
+  - Mixed `.8xl` and `.8xl2` files can be dropped together.
+  - Uses the same automatic placement behavior as the top **Load List(s)** controls.
+- Export a single list as:
   - `.8xl`
   - `.8xl2`
-- Export all populated columns at once as separate:
+- Export all populated lists at once as separate:
   - `.8xl` files
   - `.8xl2` files
-- Editable filename headers determine the downloaded filename.
+- Editable list headers determine the downloaded filename.
 - Preserves a valid TI list variable name when possible for the calculator's internal list name.
 - Performs checksum validation when importing supported files.
 - Runs entirely as a single HTML file with no installation required.
@@ -52,30 +59,38 @@ Use either button at the top of the page:
 - **Load List(s) — .8xl**
 - **Load List(s) — .8xl2**
 
-You can select multiple files. The app uses up to the first six selected files and places them into available list columns.
+You can select multiple files. The app uses up to the first six selected files and places them into available lists.
 
-### Load a file into a specific column
+### Drag and drop several lists at once
 
-Each column has a **Load .8xl\*** button.
+Next to the top **Load List(s)** buttons is a dashed drop target labeled:
 
-1. Click **Load .8xl\*** under the desired column.
+**Drag & Drop Here to Import All**
+
+You can drag multiple `.8xl` and/or `.8xl2` files onto this target. The app imports up to the first six files and places them using the same automatic placement behavior as the bulk file-picker buttons.
+
+### Load a file into a specific list
+
+Each list has a **Load .8xl\*** button.
+
+1. Click **Load .8xl\*** under the desired list.
 2. Select either a `.8xl` or `.8xl2` file.
-3. The file is loaded directly into that column.
-4. Existing data in that column is replaced.
+3. The file is loaded directly into that list.
+4. Existing data in that list is replaced.
 
-This is useful when the filename does not correspond to the desired L1-L6 column.
+This is useful when the filename does not correspond to the desired L1-L6 list.
 
-### Drag and drop a file into a specific column
+### Drag and drop a file into a specific list
 
-Each editable column header also acts as a drag-and-drop target. The dashed border around the column name indicates the active drop area.
+Each editable list header also acts as a drag-and-drop target. The dashed border around the list name indicates the active drop area.
 
 1. Drag a `.8xl` or `.8xl2` file from your computer.
-2. Move it over the desired column name.
-3. The drop target highlights while the file is over that column.
-4. Drop the file to load it directly into that column.
-5. Existing data in that column is replaced.
+2. Move it over the desired list name.
+3. The drop target highlights while the file is over that list.
+4. Drop the file to load it directly into that list.
+5. Existing data in that list is replaced.
 
-The file is loaded into the selected column regardless of the filename or internal TI list name.
+The file is loaded into the selected list regardless of the filename or internal TI list name.
 
 ### Edit a list
 
@@ -91,11 +106,29 @@ Each number is shown in an editable field. Values may be entered as:
 3.2E8
 ```
 
-Use **+ Add value** at the bottom of a column to append another list item.
+You can add values in either of two ways:
+
+- Press **Enter** while editing a value. A new row is inserted directly below with `0`, and that `0` is automatically highlighted so you can immediately type the next value.
+- Click **+ Add value** at the bottom of the list.
+
+### Delete an individual value
+
+Hover over any value field to reveal a **Ⓧ** icon on its right side. Clicking **Ⓧ** asks for confirmation before deleting only that item from that list.
+
+### Clear lists
+
+Each list has a **Clear** button. The top toolbar also has **Clear All**, which clears all six lists at once.
+
+All destructive actions use the same confirmation dialog:
+
+- **No** appears on the left.
+- **Yes** appears on the right and is highlighted/focused by default.
+- Press **Y** or **Enter** for **Yes**.
+- Press **N** or **Esc** for **No**.
 
 ### Rename an exported file
 
-The header above each column is editable. The text in that header is used as the base filename when downloading that column.
+The header above each list is editable. The text in that header is used as the base filename when downloading that list.
 
 For example, changing a header to:
 
@@ -109,16 +142,16 @@ and clicking **Save .8xl2** downloads:
 TESTDATA.8xl2
 ```
 
-The calculator's internal list-variable name is kept separate from the download filename. If the edited header is itself a valid TI list name, the app can use it as the internal list name; otherwise it preserves the imported internal name or the column's default L1-L6 name.
+The calculator's internal list-variable name is kept separate from the download filename. If the edited header is itself a valid TI list name, the app can use it as the internal list name; otherwise it preserves the imported internal name or the list's default L1-L6 name.
 
 ### Export one list
 
-Each column provides:
+Each list provides:
 
 - **Save .8xl**
 - **Save .8xl2**
 
-These buttons convert and download only that column.
+These buttons convert and download only that list.
 
 ### Export all lists
 
@@ -127,7 +160,7 @@ At the top of the page:
 - **Export all as .8xl**
 - **Export all as .8xl2**
 
-Each populated column is downloaded as a separate file. Some browsers may ask for permission to allow multiple downloads.
+Each populated list is downloaded as a separate file. Some browsers may ask for permission to allow multiple downloads.
 
 ## Technical Notes
 
@@ -161,7 +194,7 @@ Because the application is entirely client-side, it can also be used offline aft
 The app uses standard modern browser APIs including:
 
 - `FileReader` / file input handling
-- HTML5 drag-and-drop events for per-column file loading
+- HTML5 drag-and-drop events for per-list and bulk file loading
 - `Uint8Array`
 - `Blob`
 - browser-generated downloads
