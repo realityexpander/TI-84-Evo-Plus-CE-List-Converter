@@ -124,12 +124,12 @@ function renderAll() {
 
     const slot = document.createElement('div');
     slot.className = 'slot';
-    slot.textContent = `Column ${index+1}`;
+    slot.textContent = `List ${index+1}`;
 
     const name = document.createElement('input');
     name.className = 'name';
     name.value = col.name;
-    name.setAttribute('aria-label', `Column ${index+1} file name and drag-and-drop target`);
+    name.setAttribute('aria-label', `List ${index+1} file name and drag-and-drop target`);
     name.title = 'Drop a .8xl or .8xl2 file here to load it into this column';
     name.addEventListener('input', () => { col.name = name.value; });
     name.addEventListener('dragenter', e => {
@@ -173,7 +173,7 @@ function renderAll() {
         col.sourceFormat = '';
         col.sourceFile = '';
         renderAll();
-        setStatus(`Column ${index+1} data cleared.`, 'good');
+        setStatus(`List ${index+1} data cleared.`, 'good');
       })
     );
 
@@ -199,7 +199,7 @@ function renderAll() {
         input.value = value;
         input.spellcheck = false;
         input.inputMode = 'decimal';
-        input.setAttribute('aria-label', `Column ${index+1}, value ${r+1}`);
+        input.setAttribute('aria-label', `List ${index+1}, value ${r+1}`);
         const validate = () => {
           col.values[r] = input.value.trim();
           input.classList.toggle('invalid', !strictNumberText(col.values[r]));
@@ -578,7 +578,7 @@ async function loadFileIntoColumn(file,index){
     });
     renderAll();
     const checksumNote=parsed.checksumOK?'':' Checksum mismatch detected; readable data was still loaded.';
-    setStatus(`Loaded ${file.name} into Column ${index+1} (${parsed.values.length} value${parsed.values.length===1?'':'s'}).${checksumNote}`,parsed.checksumOK?'good':'warn');
+    setStatus(`Loaded ${file.name} into List ${index+1} (${parsed.values.length} value${parsed.values.length===1?'':'s'}).${checksumNote}`,parsed.checksumOK?'good':'warn');
   }catch(err){
     setStatus(`${file.name}: ${err.message}`,'bad');
   }
@@ -633,7 +633,7 @@ function collectValues(col){
   const result=[];
   for(let i=0;i<col.values.length;i++){
     const s=String(col.values[i]).trim();
-    if(!strictNumberText(s))throw new Error(`Column ${col.slot+1}, row ${i+1}: invalid number “${col.values[i]}”.`);
+    if(!strictNumberText(s))throw new Error(`List ${col.slot+1}, row ${i+1}: invalid number “${col.values[i]}”.`);
     // Run through BCD conversion here so range/precision problems are caught before download.
     tiRealFromString(s);
     result.push(s);
