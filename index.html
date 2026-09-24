@@ -6,7 +6,7 @@
 <title>TI-84 CE / TI-84 Evo List Editor</title>
 <style>
 :root{color-scheme:light;--bg:#eef3f8;--panel:#fff;--line:#cbd5e1;--text:#172033;--muted:#607089;--accent:#1261a0;--accent2:#0b4e84;--danger:#b42318;--good:#16794b;--warn:#9a6700;--shadow:0 8px 28px rgba(23,32,51,.10)}
-*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--text);font:15px/1.45 system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}.app{max-width:1500px;margin:0 auto;padding:24px}.top{display:flex;gap:18px;align-items:flex-start;justify-content:space-between;flex-wrap:wrap}.title h1{font-size:clamp(24px,3vw,36px);line-height:1.12;margin:0 0 8px}.title p{margin:0;color:var(--muted);max-width:820px}.toolbar,.exportbar{display:flex;gap:10px;flex-wrap:wrap;align-items:center}.toolbar{margin:22px 0 10px}.exportbar{margin:10px 0 18px}.btn{appearance:none;border:1px solid #a9b7c8;background:#fff;color:var(--text);font-weight:700;border-radius:9px;padding:10px 14px;cursor:pointer;box-shadow:0 1px 2px rgba(0,0,0,.04)}.btn:hover{border-color:#7f91a7;background:#f8fafc}.btn.primary{background:var(--accent);border-color:var(--accent);color:#fff}.btn.primary:hover{background:var(--accent2)}.btn.small{padding:7px 9px;font-size:12px}.btn.danger{color:var(--danger)}.status{min-height:24px;margin:6px 0 14px;padding:9px 12px;border:1px solid var(--line);border-radius:8px;background:#fff;color:var(--muted)}.status.good{color:var(--good);border-color:#a8d5c0;background:#f1fbf6}.status.warn{color:var(--warn);border-color:#e5c77b;background:#fff9e8}.status.bad{color:var(--danger);border-color:#efb1aa;background:#fff4f2}.gridwrap{overflow-x:auto;padding-bottom:10px}.columns{display:grid;grid-template-columns:repeat(6,minmax(190px,1fr));gap:12px;min-width:1180px}.column{background:var(--panel);border:1px solid var(--line);border-radius:12px;box-shadow:var(--shadow);overflow:hidden;min-height:280px}.column-top{padding:12px;border-bottom:1px solid var(--line);background:#f8fafc}.slot{font-size:11px;text-transform:uppercase;letter-spacing:.08em;color:var(--muted);font-weight:800;margin-bottom:6px}.name{width:100%;font:700 17px/1.2 ui-monospace,SFMono-Regular,Menlo,monospace;padding:8px 9px;border:2px dashed #8ea1b7;border-radius:7px;background:#fff;transition:border-color .15s ease,background .15s ease,box-shadow .15s ease}.name:hover{border-color:#617892}.name.drag-over{border-color:var(--accent);background:#edf5ff;box-shadow:0 0 0 3px rgba(34,102,170,.12)}.formatline{font-size:11px;color:var(--muted);height:18px;margin-top:5px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.column-actions{display:grid;grid-template-columns:1fr;gap:6px;margin-top:9px}.column-actions .btn{width:100%}.values{padding:10px}.row{display:grid;grid-template-columns:30px 1fr;gap:6px;align-items:center;margin-bottom:6px}.rownum{text-align:right;color:var(--muted);font:12px ui-monospace,SFMono-Regular,Menlo,monospace;padding-right:3px}.value{width:100%;padding:7px 8px;border:1px solid #b8c5d3;border-radius:6px;font:14px ui-monospace,SFMono-Regular,Menlo,monospace;background:#fff}.value.invalid{border-color:var(--danger);background:#fff1f0;outline:1px solid #f2aaa3}.empty{color:#8795a8;text-align:center;padding:28px 8px 18px;font-style:italic}.addrow{display:block;margin:10px auto 2px}.foot{margin-top:16px;color:var(--muted);font-size:12px}.foot code{background:#e5ebf2;padding:1px 4px;border-radius:4px}.copyright{margin-top:18px;padding-top:14px;border-top:1px solid var(--line);color:var(--muted);font-size:12px;line-height:1.7}.copyright a{color:var(--accent);font-weight:700;text-decoration:none}.copyright a:hover{text-decoration:underline}.hidden{display:none!important}@media(max-width:760px){.app{padding:14px}.btn{padding:9px 11px}.status{font-size:13px}}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--text);font:15px/1.45 system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}.app{max-width:1500px;margin:0 auto;padding:24px}.top{display:flex;gap:18px;align-items:flex-start;justify-content:space-between;flex-wrap:wrap}.title h1{font-size:clamp(24px,3vw,36px);line-height:1.12;margin:0 0 8px}.title p{margin:0;color:var(--muted);max-width:820px}.toolbar,.exportbar{display:flex;gap:10px;flex-wrap:wrap;align-items:center}.toolbar{margin:22px 0 10px}.bulk-drop{display:flex;align-items:center;justify-content:center;min-height:42px;padding:8px 16px;border:2px dashed #8ea1b7;border-radius:9px;background:#fff;color:var(--muted);font-weight:800;cursor:copy;transition:border-color .15s ease,background .15s ease,box-shadow .15s ease}.bulk-drop:hover{border-color:#617892}.bulk-drop.drag-over{border-color:var(--accent);background:#edf5ff;box-shadow:0 0 0 3px rgba(34,102,170,.12);color:var(--accent2)}.exportbar{margin:10px 0 18px}.btn{appearance:none;border:1px solid #a9b7c8;background:#fff;color:var(--text);font-weight:700;border-radius:9px;padding:10px 14px;cursor:pointer;box-shadow:0 1px 2px rgba(0,0,0,.04)}.btn:hover{border-color:#7f91a7;background:#f8fafc}.btn.primary{background:var(--accent);border-color:var(--accent);color:#fff}.btn.primary:hover{background:var(--accent2)}.btn.small{padding:7px 9px;font-size:12px}.btn.danger{color:var(--danger)}.status{min-height:24px;margin:6px 0 14px;padding:9px 12px;border:1px solid var(--line);border-radius:8px;background:#fff;color:var(--muted)}.status.good{color:var(--good);border-color:#a8d5c0;background:#f1fbf6}.status.warn{color:var(--warn);border-color:#e5c77b;background:#fff9e8}.status.bad{color:var(--danger);border-color:#efb1aa;background:#fff4f2}.gridwrap{overflow-x:auto;padding-bottom:10px}.columns{display:grid;grid-template-columns:repeat(6,minmax(190px,1fr));gap:12px;min-width:1180px}.column{background:var(--panel);border:1px solid var(--line);border-radius:12px;box-shadow:var(--shadow);overflow:hidden;min-height:280px}.column-top{padding:12px;border-bottom:1px solid var(--line);background:#f8fafc}.slot{font-size:11px;text-transform:uppercase;letter-spacing:.08em;color:var(--muted);font-weight:800;margin-bottom:6px}.name{width:100%;font:700 17px/1.2 ui-monospace,SFMono-Regular,Menlo,monospace;padding:8px 9px;border:2px dashed #8ea1b7;border-radius:7px;background:#fff;transition:border-color .15s ease,background .15s ease,box-shadow .15s ease}.name:hover{border-color:#617892}.name.drag-over{border-color:var(--accent);background:#edf5ff;box-shadow:0 0 0 3px rgba(34,102,170,.12)}.formatline{font-size:11px;color:var(--muted);height:18px;margin-top:5px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.column-actions{display:grid;grid-template-columns:1fr;gap:6px;margin-top:9px}.column-actions .btn{width:100%}.values{padding:10px}.row{display:grid;grid-template-columns:30px 1fr;gap:6px;align-items:center;margin-bottom:6px}.rownum{text-align:right;color:var(--muted);font:12px ui-monospace,SFMono-Regular,Menlo,monospace;padding-right:3px}.value{width:100%;padding:7px 8px;border:1px solid #b8c5d3;border-radius:6px;font:14px ui-monospace,SFMono-Regular,Menlo,monospace;background:#fff}.value.invalid{border-color:var(--danger);background:#fff1f0;outline:1px solid #f2aaa3}.empty{color:#8795a8;text-align:center;padding:28px 8px 18px;font-style:italic}.addrow{display:block;margin:10px auto 2px}.foot{margin-top:16px;color:var(--muted);font-size:12px}.foot code{background:#e5ebf2;padding:1px 4px;border-radius:4px}.copyright{margin-top:18px;padding-top:14px;border-top:1px solid var(--line);color:var(--muted);font-size:12px;line-height:1.7}.copyright a{color:var(--accent);font-weight:700;text-decoration:none}.copyright a:hover{text-decoration:underline}.confirm-dialog{border:0;border-radius:12px;padding:0;box-shadow:0 18px 60px rgba(23,32,51,.28);max-width:min(420px,calc(100vw - 32px));width:100%}.confirm-dialog::backdrop{background:rgba(23,32,51,.42)}.confirm-box{padding:22px}.confirm-box h2{margin:0 0 18px;font-size:20px;line-height:1.3}.confirm-actions{display:flex;justify-content:flex-end;gap:10px}.confirm-actions .btn{min-width:82px}.hidden{display:none!important}@media(max-width:760px){.app{padding:14px}.btn{padding:9px 11px}.status{font-size:13px}}
 </style>
 </head>
 <body>
@@ -21,6 +21,7 @@
   <div class="toolbar">
     <button class="btn primary" id="load8xl">Load List(s) — .8xl</button>
     <button class="btn primary" id="load8xl2">Load List(s) — .8xl2</button>
+    <div class="bulk-drop" id="bulkDrop" tabindex="0" role="button" aria-label="Drag and drop here to import all list files">Drag &amp; Drop Here to Import All</div>
     <input class="hidden" id="file8xl" type="file" accept=".8xl,application/octet-stream" multiple>
     <input class="hidden" id="file8xl2" type="file" accept=".8xl2,application/octet-stream" multiple>
   </div>
@@ -28,6 +29,7 @@
   <div class="exportbar">
     <button class="btn" id="exportAll8xl">Export all as .8xl</button>
     <button class="btn" id="exportAll8xl2">Export all as .8xl2</button>
+    <button class="btn danger" id="clearAll">Clear All</button>
   </div>
 
   <div id="status" class="status">Ready. Load up to six list files.</div>
@@ -45,6 +47,16 @@
     <div>Link to source on <a href="https://github.com/realityexpander/TI-84-Evo-Plus-CE-List-Converter" target="_blank" rel="noopener noreferrer">GitHub</a></div>
   </footer>
 </div>
+
+<dialog id="confirmClearDialog" class="confirm-dialog" aria-labelledby="confirmClearTitle">
+  <div class="confirm-box">
+    <h2 id="confirmClearTitle">Confirm Clear All Lists?</h2>
+    <div class="confirm-actions">
+      <button class="btn danger" id="confirmClearYes" type="button">Yes</button>
+      <button class="btn" id="confirmClearNo" type="button" autofocus>No</button>
+    </div>
+  </div>
+</dialog>
 
 <script>
 /*
@@ -167,11 +179,9 @@ function renderAll() {
       makeButton('Load .8xl*', 'btn small', () => loadSingleIntoColumn(index)),
       makeButton('Save .8xl', 'btn small', () => saveColumn(index,'8xl')),
       makeButton('Save .8xl2', 'btn small', () => saveColumn(index,'8xl2')),
-      makeButton('Clear', 'btn small danger', () => {
-        col.values = [];
-        col.loaded = false;
-        col.sourceFormat = '';
-        col.sourceFile = '';
+      makeButton('Clear', 'btn small danger', async () => {
+        if (!(await confirmClearLists())) return;
+        clearColumn(index);
         renderAll();
         setStatus(`List ${index+1} data cleared.`, 'good');
       })
@@ -220,6 +230,43 @@ function renderAll() {
     values.append(add);
     card.append(values);
     columnHost.append(card);
+  });
+}
+
+function clearColumn(index) {
+  const col = columns[index];
+  col.values = [];
+  col.loaded = false;
+  col.sourceFormat = '';
+  col.sourceFile = '';
+}
+
+function confirmClearLists() {
+  const dialog = $('#confirmClearDialog');
+  const yes = $('#confirmClearYes');
+  const no = $('#confirmClearNo');
+  return new Promise(resolve => {
+    let settled = false;
+    const finish = value => {
+      if (settled) return;
+      settled = true;
+      yes.removeEventListener('click', onYes);
+      no.removeEventListener('click', onNo);
+      dialog.removeEventListener('cancel', onCancel);
+      dialog.removeEventListener('close', onClose);
+      if (dialog.open) dialog.close();
+      resolve(value);
+    };
+    const onYes = () => finish(true);
+    const onNo = () => finish(false);
+    const onCancel = e => { e.preventDefault(); finish(false); };
+    const onClose = () => finish(false);
+    yes.addEventListener('click', onYes);
+    no.addEventListener('click', onNo);
+    dialog.addEventListener('cancel', onCancel);
+    dialog.addEventListener('close', onClose);
+    dialog.showModal();
+    requestAnimationFrame(() => no.focus());
   });
 }
 
@@ -599,7 +646,7 @@ function loadSingleIntoColumn(index){
   picker.click();
 }
 
-async function loadFiles(fileList, expectedExt){
+async function loadFiles(fileList, expectedExt=null){
   let files=Array.from(fileList||[]);
   const selectedCount=files.length;
   files=files.slice(0,MAX_COLUMNS);
@@ -609,16 +656,20 @@ async function loadFiles(fileList, expectedExt){
   for(const file of files){
     try{
       const lower=file.name.toLowerCase();
-      if(!lower.endsWith('.'+expectedExt))throw new Error(`Expected a .${expectedExt} file.`);
+      let ext='';
+      if(lower.endsWith('.8xl2'))ext='8xl2';
+      else if(lower.endsWith('.8xl'))ext='8xl';
+      else throw new Error('Expected a .8xl or .8xl2 file.');
+      if(expectedExt && ext!==expectedExt)throw new Error(`Expected a .${expectedExt} file.`);
       const bytes=new Uint8Array(await file.arrayBuffer());
-      const parsed=expectedExt==='8xl'?parse8xl(bytes):parse8xl2(bytes);
+      const parsed=ext==='8xl'?parse8xl(bytes):parse8xl2(bytes);
       let slot=-1;
       const m=String(parsed.tiName||'').match(/^L([1-6])$/i);
       if(m){ const wanted=Number(m[1])-1; if(!columns[wanted].loaded && columns[wanted].values.length===0)slot=wanted; }
       if(slot<0)slot=columns.findIndex(c=>!c.loaded && c.values.length===0);
-      if(slot<0)throw new Error('No empty column remains. Clear a column first.');
+      if(slot<0)throw new Error('No empty list remains. Clear a list first.');
       const base=file.name.replace(/\.(?:8xl2|8xl)$/i,'');
-      Object.assign(columns[slot],{name:base,tiName:parsed.tiName||`L${slot+1}`,values:parsed.values,loaded:true,sourceFormat:'.'+expectedExt,sourceFile:file.name});
+      Object.assign(columns[slot],{name:base,tiName:parsed.tiName||`L${slot+1}`,values:parsed.values,loaded:true,sourceFormat:'.'+ext,sourceFile:file.name});
       loaded++; if(!parsed.checksumOK)badChecksums++;
     }catch(err){ failed++; messages.push(`${file.name}: ${err.message}`); }
   }
@@ -667,8 +718,23 @@ $('#load8xl').addEventListener('click',()=>$('#file8xl').click());
 $('#load8xl2').addEventListener('click',()=>$('#file8xl2').click());
 $('#file8xl').addEventListener('change',e=>{loadFiles(e.target.files,'8xl');e.target.value='';});
 $('#file8xl2').addEventListener('change',e=>{loadFiles(e.target.files,'8xl2');e.target.value='';});
+
+const bulkDrop=$('#bulkDrop');
+bulkDrop.addEventListener('dragenter',e=>{e.preventDefault();e.stopPropagation();bulkDrop.classList.add('drag-over');});
+bulkDrop.addEventListener('dragover',e=>{e.preventDefault();e.stopPropagation();if(e.dataTransfer)e.dataTransfer.dropEffect='copy';bulkDrop.classList.add('drag-over');});
+bulkDrop.addEventListener('dragleave',e=>{e.preventDefault();e.stopPropagation();bulkDrop.classList.remove('drag-over');});
+bulkDrop.addEventListener('drop',async e=>{
+  e.preventDefault();e.stopPropagation();bulkDrop.classList.remove('drag-over');
+  if(e.dataTransfer&&e.dataTransfer.files)await loadFiles(e.dataTransfer.files);
+});
 $('#exportAll8xl').addEventListener('click',()=>exportAll('8xl'));
 $('#exportAll8xl2').addEventListener('click',()=>exportAll('8xl2'));
+$('#clearAll').addEventListener('click',async()=>{
+  if (!(await confirmClearLists())) return;
+  columns.forEach((_,index)=>clearColumn(index));
+  renderAll();
+  setStatus('All list data cleared.','good');
+});
 
 // Expose the format core for browser-console testing and future extension.
 window.TIListFormats={parse8xl,make8xl,parse8xl2,make8xl2,tiRealFromString,tiRealToString,evoChecksum};
