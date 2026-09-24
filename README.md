@@ -2,9 +2,13 @@
 
 A single-page, browser-based editor and converter for TI calculator real-number list files.
 
+<img width="680" alt="image" src="https://github.com/user-attachments/assets/6d76c74a-8686-4e01-b570-51ff5682b586" />
+
 The app can import **TI-84 Plus CE `.8xl`** list files and **TI-84 Evo `.8xl2`** list files, display the values in editable columns, and export each list in either format.
 
 All conversion and editing happens locally in the browser. No files are uploaded to a server.
+
+Link to live app: https://realityexpander.github.io/TI-84-Evo-Plus-CE-List-Converter/
 
 ## Features
 
@@ -40,6 +44,7 @@ All conversion and editing happens locally in the browser. No files are uploaded
 - Preserves a valid TI list variable name when possible for the calculator's internal list name.
 - Performs checksum validation when importing supported files.
 - Runs entirely as a single HTML file with no installation required.
+- Link to conversation with ChatGPT 5.6 Sol on High: https://chatgpt.com/share/6ab477f0-b560-83ea-9e50-590ea0bf7d30
 
 ## Supported Calculators and Formats
 
