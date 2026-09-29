@@ -11,7 +11,7 @@ All conversion and editing happens locally in the browser. No files are uploaded
 
 Link to live app: https://realityexpander.github.io/TI-84-Evo-Plus-CE-List-Converter/
 
-Step-by-step instrucitons: https://github.com/realityexpander/TI-84-Evo-Plus-CE-List-Converter/Convert-TI-84-Plus-CE-To-Evo-Instructions
+Step-by-step instrucitons: https://github.com/realityexpander/TI-84-Evo-Plus-CE-List-Converter/Convert-TI-84-Plus-CE-To-Evo-Instructions/README.md
 
 ## Features
 
