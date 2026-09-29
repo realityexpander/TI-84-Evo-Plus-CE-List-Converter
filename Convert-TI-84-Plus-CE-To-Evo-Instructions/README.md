@@ -1,4 +1,4 @@
-# Steps to Convert a List (L4) from TI-84 Plus CE to TI-84 Evo
+# Steps to Convert a List from TI-84 Plus CE to TI-84 Evo
 
 1) Hook up the TI-84 Plus CE via USB and launch the "TI Connect CE.app"
    
@@ -17,13 +17,15 @@
     <img width="540" alt="image" src="https://github.com/user-attachments/assets/2fd8c292-ab94-425e-b913-0d9d38072580" />
 
 6) Go to http://realityexpander.github.io/TI-84-Evo-Plus-CE-List-Converter/
-7) Drag-n-drop the L4.8xl to the "Import All" target, then save the L4.8xl2 file (Evo format.)
+7) Drag-n-drop the L4.8xl to the "Import All" target, then save the L4.8xl2 file (Evo format.) 
+
+   You can drag multiple files (up to 6) at a time, and they are autmatically slotted into the corresponding list, L1 to L6.
 
   <img width="540" alt="image" src="https://github.com/user-attachments/assets/f8c86003-23d1-48e8-9f5c-1efecc383d56" />
 
 8) Go to http://connectevo.ti.com/ticevo/en/
    
-   <img width="1862" alt="image" src="https://github.com/user-attachments/assets/10952e0d-b67d-401f-842d-1e926367fe6d" />
+   <img width="542" alt="image" src="https://github.com/user-attachments/assets/10952e0d-b67d-401f-842d-1e926367fe6d" />
 
 9) Connect the TI-84 Evo
 
@@ -37,15 +39,15 @@
 
 12) Click "Send to Calculator" 
     
-    <img width="1862" alt="image" src="https://github.com/user-attachments/assets/66d93ef7-b99a-4628-a915-700590f68eaa" />
+    <img width="540" alt="image" src="https://github.com/user-attachments/assets/66d93ef7-b99a-4628-a915-700590f68eaa" />
 
 13) Choose the "L4.8xl2" file to send to the connected Evo Calculator
   
-  <img width="1992" alt="image" src="https://github.com/user-attachments/assets/c58a467f-9418-4a9e-bfd1-9db0348eb69c" />
+  <img width="540" alt="image" src="https://github.com/user-attachments/assets/c58a467f-9418-4a9e-bfd1-9db0348eb69c" />
 
 14) Confirm send to Evo
 
-    <img width="1862" alt="image" src="https://github.com/user-attachments/assets/7c117048-e60e-4c58-b1bd-8b0858d10dac" />
+    <img width="540" alt="image" src="https://github.com/user-attachments/assets/7c117048-e60e-4c58-b1bd-8b0858d10dac" />
 
 15) L4 is transferred
     
