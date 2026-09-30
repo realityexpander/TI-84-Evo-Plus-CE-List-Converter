@@ -30,26 +30,26 @@
 8) Connect the TI-84 Evo
 
    <img width="540" alt="image" src="https://github.com/user-attachments/assets/483b1594-ee1e-407d-9e78-a22e54f663cc" />
-9)
+
    <img width="540" alt="image" src="https://github.com/user-attachments/assets/b555c68f-013e-45f3-83e0-d4c4a67cfc11" />
 
-10) Click "Send files" to send files to the connected Evo
+9) Click "Send files" to send files to the connected Evo
     
 <img width="540" alt="image" src="https://github.com/user-attachments/assets/846de3ca-e53b-48b4-9083-5a75c3c0dcc1" />
 
-11) Click "Send to Calculator" 
+10) Click "Send to Calculator" 
     
 <img width="540" alt="image" src="https://github.com/user-attachments/assets/66d93ef7-b99a-4628-a915-700590f68eaa" />
 
-12) Choose the "L4.8xl2" file to send to the connected Evo Calculator
+11) Choose the "L4.8xl2" file to send to the connected Evo Calculator
   
 <img width="540" alt="image" src="https://github.com/user-attachments/assets/c58a467f-9418-4a9e-bfd1-9db0348eb69c" />
 
-13) Confirm send to Evo
+12) Confirm send to Evo
 
 <img width="540" alt="image" src="https://github.com/user-attachments/assets/7c117048-e60e-4c58-b1bd-8b0858d10dac" />
 
-14) L4 is transferred
+13) L4 is transferred
     
 <img width="594" alt="image" src="https://github.com/user-attachments/assets/407edcb2-cadf-433b-9bf8-240c623156ef" />
 
