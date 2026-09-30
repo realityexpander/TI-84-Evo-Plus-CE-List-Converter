@@ -53,8 +53,6 @@
     
 <img width="594" alt="image" src="https://github.com/user-attachments/assets/407edcb2-cadf-433b-9bf8-240c623156ef" />
 
-<img width="594" alt="image" src="https://github-production-user-asset-6210df.s3.amazonaws.com/5157474/661635011-7c117048-e60e-4c58-b1bd-8b0858d10dac.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAVCODYLSA53PQK4ZA%2F20260930%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20260930T204558Z&X-Amz-Expires=300&X-Amz-Signature=ce90f982496cabf8ad0edcc576d4622e896817cab367d3a72e7562c8e18d5dff&X-Amz-SignedHeaders=host&response-content-type=image%2Fpng" />
-
 
 ## Copyright
 
