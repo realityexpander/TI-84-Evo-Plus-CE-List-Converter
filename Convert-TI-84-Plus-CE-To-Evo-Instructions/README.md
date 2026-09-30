@@ -14,8 +14,6 @@
 
 4) Save as "L4.8xl" , .8xl is the TI-84 Plus CE format.
 
-<img src="https://github-production-user-asset-6210df.s3.amazonaws.com/5157474/661630515-2fd8c292-ab94-425e-b913-0d9d38072580.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAVCODYLSA53PQK4ZA%2F20260930%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20260930T210418Z&X-Amz-Expires=300&X-Amz-Signature=64d2fe4a5469117d4738d3ccf61a028637485b92d7e5ba8bc4039558064d3d17&X-Amz-SignedHeaders=host&response-content-type=image%2Fpng" />
-
 <img width="540" alt="image" src="https://github.com/user-attachments/assets/2fd8c292-ab94-425e-b913-0d9d38072580" />
 
 5) Go to [http://realityexpander.github.io/TI-84-Evo-Plus-CE-List-Converter/](http://realityexpander.github.io/TI-84-Evo-Plus-CE-List-Converter/)
