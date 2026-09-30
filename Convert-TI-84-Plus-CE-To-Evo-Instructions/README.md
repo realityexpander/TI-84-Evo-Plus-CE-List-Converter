@@ -35,23 +35,23 @@
 
 11) Click "Send files" to send files to the connected Evo
     
-    <img width="540" alt="image" src="https://github.com/user-attachments/assets/846de3ca-e53b-48b4-9083-5a75c3c0dcc1" />
+<img width="540" alt="image" src="https://github.com/user-attachments/assets/846de3ca-e53b-48b4-9083-5a75c3c0dcc1" />
 
 12) Click "Send to Calculator" 
     
-    <img width="540" alt="image" src="https://github.com/user-attachments/assets/66d93ef7-b99a-4628-a915-700590f68eaa" />
+<img width="540" alt="image" src="https://github.com/user-attachments/assets/66d93ef7-b99a-4628-a915-700590f68eaa" />
 
 13) Choose the "L4.8xl2" file to send to the connected Evo Calculator
   
-  <img width="540" alt="image" src="https://github.com/user-attachments/assets/c58a467f-9418-4a9e-bfd1-9db0348eb69c" />
+<img width="540" alt="image" src="https://github.com/user-attachments/assets/c58a467f-9418-4a9e-bfd1-9db0348eb69c" />
 
 14) Confirm send to Evo
 
-    <img width="540" alt="image" src="https://github.com/user-attachments/assets/7c117048-e60e-4c58-b1bd-8b0858d10dac" />
+<img width="540" alt="image" src="https://github.com/user-attachments/assets/7c117048-e60e-4c58-b1bd-8b0858d10dac" />
 
 15) L4 is transferred
     
-    <img width="594" alt="image" src="https://github.com/user-attachments/assets/407edcb2-cadf-433b-9bf8-240c623156ef" />
+<img width="594" alt="image" src="https://github.com/user-attachments/assets/407edcb2-cadf-433b-9bf8-240c623156ef" />
 
 
 
