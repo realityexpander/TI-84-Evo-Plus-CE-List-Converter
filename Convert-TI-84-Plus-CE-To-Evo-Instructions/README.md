@@ -16,7 +16,7 @@
 
     <img width="540" alt="image" src="https://github.com/user-attachments/assets/2fd8c292-ab94-425e-b913-0d9d38072580" />
 
-5) Go to http://realityexpander.github.io/TI-84-Evo-Plus-CE-List-Converter/
+5) Go to (http://realityexpander.github.io/TI-84-Evo-Plus-CE-List-Converter/)[http://realityexpander.github.io/TI-84-Evo-Plus-CE-List-Converter/]
 
 6) Drag-n-drop the L4.8xl to the "Import All" target, then save the L4.8xl2 file (Evo format.) 
 
