@@ -17,6 +17,7 @@
     <img width="540" alt="image" src="https://github.com/user-attachments/assets/2fd8c292-ab94-425e-b913-0d9d38072580" />
 
 5) Go to http://realityexpander.github.io/TI-84-Evo-Plus-CE-List-Converter/
+
 6) Drag-n-drop the L4.8xl to the "Import All" target, then save the L4.8xl2 file (Evo format.) 
 
    You can drag multiple files (up to 6) at a time, and they are autmatically slotted into the corresponding list, L1 to L6.
