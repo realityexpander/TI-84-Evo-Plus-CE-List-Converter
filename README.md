@@ -1,107 +1,122 @@
-# TI-84 Evo <-> Plus CE List Translator / Converter / Editor
+# TI-84 Plus CE Lists ◀▶ Evo Lists
 
-A single-page, browser-based editor and converter for TI calculator real-number list files.
+A browser-based **TI-84 Plus CE ↔ TI-84 Evo real-number list editor, converter, and USB transfer utility**. Import list files, retrieve lists directly from a connected calculator, edit their values, export to either calculator's file format, or send lists back to a connected calculator.
 
-<img width="600" alt="image" src="https://github.com/user-attachments/assets/12cbb662-b37b-409e-9288-800e152c087d" />
+<img width="600" alt="TI-84 Plus CE and Evo list editor" src="https://github.com/user-attachments/assets/12cbb662-b37b-409e-9288-800e152c087d" />
 
-The app can import **TI-84 Plus CE `.8xl`** list files and **TI-84 Evo `.8xl2`** list files, display the values in editable columns, and export each list in either format.
+- **Live app:** https://realityexpander.github.io/TI-84-Evo-Plus-CE-List-Converter/
+- **Step-by-step conversion instructions:** https://realityexpander.github.io/TI-84-Evo-Plus-CE-List-Converter/Convert-TI-84-Plus-CE-To-Evo-Instructions/
+- **Source repository:** https://github.com/realityexpander/TI-84-Evo-Plus-CE-List-Converter
 
-All conversion and editing happens locally in the browser. No files are uploaded to a server.
-
-Link to live app: https://realityexpander.github.io/TI-84-Evo-Plus-CE-List-Converter/
-
-Step-by-step instrucitons: https://realityexpander.github.io/TI-84-Evo-Plus-CE-List-Converter/Convert-TI-84-Plus-CE-To-Evo-Instructions/
+**Current documented application version: 1.0v18.** File conversion and USB transfers run locally in your browser; calculator list data is not uploaded to a server.
 
 ## Features
 
-- Import TI-84 Plus CE real-number lists in `.8xl` format.
-- Import TI-84 Evo real-number lists in `.8xl2` format.
-- Load up to six lists into **List 1** through **List 6**.
-- Automatically use the loaded filename, without the extension, as the editable list header.
-- Edit list values directly in the browser.
-- Supports integers, decimal values, and scientific notation such as `1.25e-6`.
-- Press **Enter** in a value field to insert a new row directly below it containing `0`; the new `0` is automatically selected and ready to replace by typing.
-- Add new values to any list with **+ Add value**.
-- Hover over a value field to reveal a **Ⓧ** control for deleting that item from that list only.
-- Clear an individual list after confirmation.
-- Clear all six lists at once with **Clear All**, after confirmation.
-- Load a file directly into a specific list with that list's **Load .8xl\*** button.
-  - Accepts either `.8xl` or `.8xl2`.
-  - The selected file is loaded into that exact list regardless of its filename or internal list name.
-- Drag and drop a `.8xl` or `.8xl2` file directly onto any list header.
-  - Each editable list name is surrounded by a dashed border to identify it as a drop target.
-  - The target highlights while a file is dragged over it.
-  - The dropped file is loaded into that exact list, replacing any existing data there.
-- Drag and drop multiple `.8xl` and/or `.8xl2` files onto the top **Drag & Drop Here to Import All** target.
-  - Imports up to the first six dropped files.
-  - Mixed `.8xl` and `.8xl2` files can be dropped together.
-  - Uses the same automatic placement behavior as the top **Load List(s)** controls.
-- Export a single list as:
-  - `.8xl`
-  - `.8xl2`
-- Export all populated lists at once as separate:
-  - `.8xl` files
-  - `.8xl2` files
-- Editable list headers determine the downloaded filename.
-- Preserves a valid TI list variable name when possible for the calculator's internal list name.
-- Performs checksum validation when importing supported files.
-- Runs entirely as a single HTML file with no installation required.
-- Link to conversation with ChatGPT 5.6 Sol on High: https://chatgpt.com/share/6ab477f0-b560-83ea-9e50-590ea0bf7d30
+### Import and export files
+
+- Open TI-84 Plus CE `.8xl` and TI-84 Evo `.8xl2` **real-number list files**, including multiple files at once.
+- Convert any list to either format using **Save .8xl** or **Save .8xl2**.
+- Export all populated lists as separate `.8xl` or `.8xl2` files.
+- Import mixed `.8xl` and `.8xl2` files by dragging them onto **Drag & Drop Here to Import All**.
+- Drop a file onto an individual column's dashed filename field to load it into that column.
+- Validate file checksums and warn when a checksum does not match. Readable data may still load with a warning.
+
+### Connect directly to calculators
+
+- **Get Plus CE Device Lists — WebUSB:** Read populated standard real-number lists **L1–L11** from a connected TI-84 Plus CE; skip empty lists and ignore unrelated variable types.
+- **Get Evo Device Lists — WebUSB:** Read populated standard real-number lists **L1–L6** from a connected TI-84 Evo; skip empty lists and ignore nonstandard lists.
+- **Send to Plus CE as Lx:** Send an editor column to the corresponding Plus CE destination list; the number **x** is the **editor column number**, not its editable filename.
+- **Send L1 to Lx to Plus CE — WebUSB:** Send all populated editor columns to their corresponding Plus CE list numbers, skipping empty columns. The button displays the highest populated column as **x**.
+- **Send to Evo as Lx:** Send a single one of the first six editor columns to the corresponding Evo list **L1–L6**.
+- **Send L1 to L6 to Evo — WebUSB:** Send all populated editor columns among **L1–L6**, skipping empty columns.
+- Check the destination calculator's directory before sending, and request confirmation before replacing lists reported as populated.
+
+**Important:** Direct Plus CE sending was added in v17. Its protocol implementation has passed simulated tests, but a successful write to a physical Plus CE had **not yet been confirmed** in this project's testing. Back up calculator data and verify a small test list before sending important lists or using the bulk-send command.
+
+### Edit lists
+
+- Show **six columns by default**, expanding automatically as needed to a maximum of **12 columns**.
+- Edit integers, decimals, and scientific notation (for example, `1.25e-6`).
+- Press **Enter** in a value field to insert a new row immediately below, with `0` selected for immediate editing.
+- Use **+ Add value** to append a value, or hover over a row and click **Ⓧ** to delete that entry.
+- Use **Drag To Copy** to copy one entire column to another column's dashed filename target.
+- Edit the column header to control the filename of downloaded list files.
+- Clear one column or all columns, each with a confirmation dialog.
 
 ## Supported Calculators and Formats
 
-| Calculator | List format | Extension |
-| --- | --- | --- |
-| TI-84 Plus CE and compatible TI-83/84 family list files | Real-number list | `.8xl` |
-| TI-84 Evo | Real-number list | `.8xl2` |
+| Calculator | File format | Direct device import | Direct device send |
+| --- | --- | --- | --- |
+| **TI-84 Plus CE** | `.8xl` | WebUSB; standard real lists **L1–L11** | WebUSB; corresponding editor-column list numbers, subject to device limits |
+| **TI-84 Evo** | `.8xl2` | WebUSB; standard real lists **L1–L6** | WebUSB; standard real lists **L1–L6** |
 
-The application is intended for **real-number lists**. Complex-number lists and unsupported Evo expression types are outside the current scope.
+Compatible TI-83/84-family `.8xl` *files* may also be opened for conversion; that does not mean the app has been tested for direct USB connections to every calculator in that family.
+
+The app works with **real-number lists**. Complex lists and unsupported Evo expression types are outside its current scope. The Plus CE has a limit of **999 elements per list**, which the direct Plus CE sending code checks before beginning a transfer.
+
+Although the editor can display 12 columns, that does **not** guarantee that a physical calculator supports all 12 corresponding built-in list names. In particular, Plus CE device import recognizes standard L1–L11; direct sending to an L12 destination has not been validated.
+
+## Getting Started
+
+### Use the live app
+
+Open the [live app](https://realityexpander.github.io/TI-84-Evo-Plus-CE-List-Converter/) in a current desktop version of **Google Chrome or Microsoft Edge** for calculator USB operations. USB access requires browser permission; choose the correct calculator in Chrome's device chooser.
+
+### Run locally on a Mac or PC
+
+For file editing and conversion alone, you can open the HTML file in a browser. **For USB communication, use `http://localhost` rather than a `file://` URL.**
+
+1. Download or clone the repository, and navigate to the directory containing the HTML application.
+2. Make sure `favicon.ico` is in the same directory as the HTML file if you want the **84** browser-tab icon.
+3. Start a local web server:
+
+   ```bash
+   python3 -m http.server 8000
+   ```
+
+4. Open `http://localhost:8000/` if your copy is named `index.html`, or open `http://localhost:8000/ti84_list_editor_usb_v18.html` if you are using the versioned file directly.
+5. Connect your TI-84 Plus CE or TI-84 Evo using its USB data cable, then choose the appropriate **Get** or **Send** button.
+
+No packages, build process, or backend application are required. The Python server delivers the static HTML; it does **not** receive or process calculator list data. After the page loads, all editing, conversion, and USB communication occur in the browser.
+
+For USB access, the page needs a **secure context** (such as `https://` or `http://localhost`) and a Chromium-based browser supporting **WebUSB**. Evo initialization additionally uses **Web Serial**.
 
 ## Using the App
 
-### Load several lists
+### 1. Load list files from your computer
 
-Use either button at the top of the page:
+Use either of these buttons:
 
-- **Load List(s) — .8xl**
-- **Load List(s) — .8xl2**
+- **Load List(s) — .8xl** for Plus CE-format files.
+- **Load List(s) — .8xl2** for Evo-format files.
 
-You can select multiple files. The app uses up to the first six selected files and places them into available lists.
+Select one or more files. You can also drag `.8xl` and `.8xl2` files together onto **Drag & Drop Here to Import All**. Up to **12 files** are considered per batch. The app prefers the matching standard list column when it is available; otherwise it uses an empty column.
 
-### Drag and drop several lists at once
+For an exact destination, click a column's **Load .8xl\*** button (accepts both extensions), or drag a file onto that column's dashed filename field. This replaces the contents of that column regardless of the file's name.
 
-Next to the top **Load List(s)** buttons is a dashed drop target labeled:
+### 2. Get lists directly from a Plus CE
 
-**Drag & Drop Here to Import All**
+1. Connect the TI-84 Plus CE to your computer with a USB data cable.
+2. Click **Get Plus CE Device Lists — WebUSB**.
+3. Select your calculator in the browser's WebUSB chooser and grant permission.
+4. The app reads the device directory and imports populated standard real-number lists **L1–L11** into the editor.
+5. Review the status bar for the count of lists imported, empty lists skipped, or any errors.
 
-You can drag multiple `.8xl` and/or `.8xl2` files onto this target. The app imports up to the first six files and places them using the same automatic placement behavior as the bulk file-picker buttons.
+This **reads** calculator data; it does not erase or overwrite lists on the calculator.
 
-### Load a file into a specific list
+### 3. Get lists directly from an Evo
 
-Each list has a **Load .8xl\*** button.
+1. Connect the TI-84 Evo to your computer with a USB data cable.
+2. Click **Get Evo Device Lists — WebUSB**.
+3. On first use, Chrome may ask you to authorize the Evo through **Web Serial** to initialize its USB CDC connection, and then ask separately for **WebUSB** access.
+4. If Chrome requires a second user gesture for the WebUSB chooser, follow the app's message and click the same **Get Evo Device Lists — WebUSB** button again.
+5. The app then imports populated standard **L1–L6** lists via **WebUSB**, skipping empty and nonstandard lists.
 
-1. Click **Load .8xl\*** under the desired list.
-2. Select either a `.8xl` or `.8xl2` file.
-3. The file is loaded directly into that list.
-4. Existing data in that list is replaced.
+The automatic Web Serial open/close step is **initialization only**; list contents are retrieved through WebUSB. The app remembers successful initialization for that browser page session, so subsequent Evo WebUSB imports generally do not need to repeat it. There is no longer a separate **Get Evo Device Lists — Web Serial** button.
 
-This is useful when the filename does not correspond to the desired L1-L6 list.
+### 4. Edit and copy list values
 
-### Drag and drop a file into a specific list
-
-Each editable list header also acts as a drag-and-drop target. The dashed border around the list name indicates the active drop area.
-
-1. Drag a `.8xl` or `.8xl2` file from your computer.
-2. Move it over the desired list name.
-3. The drop target highlights while the file is over that list.
-4. Drop the file to load it directly into that list.
-5. Existing data in that list is replaced.
-
-The file is loaded into the selected list regardless of the filename or internal TI list name.
-
-### Edit a list
-
-Each number is shown in an editable field. Values may be entered as:
+Each numeric entry is editable. For example:
 
 ```text
 0
@@ -113,118 +128,131 @@ Each number is shown in an editable field. Values may be entered as:
 3.2E8
 ```
 
-You can add values in either of two ways:
+- **Enter:** Insert a new `0` row immediately below the current entry and select its value.
+- **+ Add value:** Append a new `0` entry.
+- **Ⓧ:** Delete one entry, with confirmation.
+- **Drag To Copy:** Drag that button onto another column's dashed filename field to copy all values into the target column.
 
-- Press **Enter** while editing a value. A new row is inserted directly below with `0`, and that `0` is automatically highlighted so you can immediately type the next value.
-- Click **+ Add value** at the bottom of the list.
+The dashed filename field is also editable. For example, changing a column heading to `TESTDATA` and pressing **Save .8xl2** downloads `TESTDATA.8xl2`.
 
-### Delete an individual value
+The downloaded **filename** and the calculator's internal **list variable name** are distinct. For device sending, the destination is always determined by the editor column (`L1`, `L2`, etc.), even if the column's filename has been renamed.
 
-Hover over any value field to reveal a **Ⓧ** icon on its right side. Clicking **Ⓧ** asks for confirmation before deleting only that item from that list.
+### 5. Send one list to a Plus CE
 
-### Clear lists
+**Back up existing calculator lists first, particularly while hardware write compatibility is being verified.**
 
-Each list has a **Clear** button. The top toolbar also has **Clear All**, which clears all six lists at once.
+1. Put a small test list into the editor column that matches the desired destination (for example, values `1`, `2`, `3` in editor **List 4**).
+2. Click **Send to Plus CE as L4** under that column.
+3. Select your Plus CE in the WebUSB chooser.
+4. The app reads the calculator's directory and, if **L4** already contains data, asks **Confirm Overwrite Plus CE L4?**
+5. Confirm to send, or select **No** to cancel.
+6. Check the result on the calculator itself before transferring more data.
 
-All destructive actions use the same confirmation dialog:
+The app sends the list to the matching destination number, *not* to the filename shown in the editor header.
 
-- **No** appears on the left.
-- **Yes** appears on the right and is highlighted/focused by default.
-- Press **Y** or **Enter** for **Yes**.
-- Press **N** or **Esc** for **No**.
+### 6. Send multiple lists to a Plus CE
 
-### Rename an exported file
+1. Populate the editor columns you want to send.
+2. Click **Send L1 to Lx to Plus CE — WebUSB**, where **x** is the highest populated editor column. When no columns contain data, the button reads **Send Lists to Plus CE — WebUSB**.
+3. Select the Plus CE in the WebUSB chooser.
+4. If destination lists already contain data, confirm the overwrite dialog; it identifies the populated destinations to be replaced.
+5. The app transfers **only populated columns**, retaining their original destination numbers. For example, populated editor **L1, L3, and L6** are sent to **L1, L3, and L6**, respectively.
+6. If the calculator does not acknowledge a write, the app **stops the batch** rather than attempting the remaining lists on a potentially unsynchronized USB connection.
 
-The header above each list is editable. The text in that header is used as the base filename when downloading that list.
+The button is not a command to replace every intermediate list; empty editor columns are skipped.
 
-For example, changing a header to:
+### 7. Send lists to an Evo
 
-```text
-TESTDATA
-```
+To send a single populated column among **List 1–List 6**, click **Send to Evo as Lx** under that column. To send all populated columns in that range, click **Send L1 to L6 to Evo — WebUSB**.
 
-and clicking **Save .8xl2** downloads:
+1. Select your Evo in the WebUSB chooser.
+2. The app reads its directory to find existing destination lists.
+3. If one or more destinations already contain data, confirm the overwrite prompt.
+4. The app sends each selected column to its matching Evo list **L1–L6**, not the editable filename.
+5. Check the status message and calculator after the transfer.
 
-```text
-TESTDATA.8xl2
-```
+Empty editor columns are skipped. The implementation attempts to retain the previous RAM/archive destination when available and may retry using archive memory for certain reported memory errors.
 
-The calculator's internal list-variable name is kept separate from the download filename. If the edited header is itself a valid TI list name, the app can use it as the internal list name; otherwise it preserves the imported internal name or the list's default L1-L6 name.
+### 8. Export a single list or all lists
 
-### Export one list
+Each column has:
 
-Each list provides:
+- **Save .8xl** — download a Plus CE-format list file.
+- **Save .8xl2** — download an Evo-format list file.
 
-- **Save .8xl**
-- **Save .8xl2**
+The top toolbar has:
 
-These buttons convert and download only that list.
+- **Export all as .8xl files**
+- **Export all as .8xl2 files**
 
-### Export all lists
+Exporting all produces a **separate download for each populated or loaded column**, rather than one combined file. Your browser may ask permission for multiple downloads.
 
-At the top of the page:
+### 9. Delete or clear data
 
-- **Export all as .8xl**
-- **Export all as .8xl2**
+- Hover over an individual value and click **Ⓧ** to remove that entry after confirmation.
+- Click a column's **Clear** button to open **Confirm Clear List X?** for the selected column.
+- Click the top **Clear All** button to open **Confirm Clear All Lists?**; this clears every editor column and resets the display to six columns.
 
-Each populated list is downloaded as a separate file. Some browsers may ask for permission to allow multiple downloads.
+In confirmation dialogs, **Y** or **Enter** means **Yes**, while **N** or **Esc** means **No**. The **Yes** button is focused by default, so review the action before pressing Enter.
 
 ## Technical Notes
 
-### TI-84 Plus CE `.8xl`
+### Plus CE `.8xl` format
 
-The app reads and writes the standard TI-83/84-family variable-file container used for real-number lists. Numeric entries use the calculator's 9-byte BCD real-number representation with up to 14 significant decimal digits.
+The app reads and writes the TI-83/84-family variable-file container for supported real-number lists. Real values use **9-byte BCD** encoding with up to **14 significant decimal digits**.
 
-### TI-84 Evo `.8xl2`
+For device transfers, the Plus CE uses the **TI DUSB** protocol over WebUSB. Before sending, the app checks the destination directory, then performs the request-to-send (**RTS**), variable-contents, and end-of-transfer (**EOT**) sequence with calculator acknowledgments.
 
-TI-84 Evo list files use a different container and numeric representation from legacy `.8xl` files. The app handles the Evo CBOR-based container, list metadata, numeric-expression data, and Evo checksum used by supported real-number lists.
+### Evo `.8xl2` format
 
-The Evo implementation was developed with reference to the open-source `tivars_lib_cpp` project:
+The Evo uses a different **CBOR-based container**, numeric-expression data representation, and checksum. The editor converts supported real-number data between `.8xl` and `.8xl2` formats.
 
-https://github.com/adriweb/tivars_lib_cpp
+Evo device transfers use **Kermit** over USB. On supported browsers and systems, the app first initializes the calculator's CDC connection through Web Serial (115200 baud) when needed, then performs list retrieval through WebUSB. Evo WebUSB sending is limited to **L1–L6**.
 
-`tivars_lib_cpp` is distributed under the MIT License. Attribution for the referenced implementation is also included in the HTML source.
+### Reference implementations
 
-## Running Locally
+The format and transfer implementations were developed with reference to public/open-source TI calculator work, including:
 
-No build process or web server is required.
+- [`tivars_lib_cpp`](https://github.com/adriweb/tivars_lib_cpp) for TI variable file formats (MIT License).
+- [`evo_usb_py`](https://github.com/Evo-Programming/evo_usb_py) and related TI/Kermit transfer documentation for Evo USB transfers.
+- TI DUSB protocol references and [the open-source Plus CE sender](https://github.com/Redgale/TICAI-TI84-Cesium-Auto-Installer) for Plus CE device sending.
 
-1. Download or clone this repository.
-2. Open `ti84_list_editor.html` in a modern browser.
-3. Load your calculator list files.
-4. Edit or convert them as needed.
-
-Because the application is entirely client-side, it can also be used offline after the HTML file has been downloaded.
+The relevant attribution and MIT license notice are included in the HTML application's source.
 
 ## Browser Compatibility
 
-The app uses standard modern browser APIs including:
+| Browser | Edit/convert local list files | Direct calculator USB operations |
+| --- | --- | --- |
+| Current desktop **Chrome** | Yes | **Recommended**; WebUSB and Web Serial support |
+| Current desktop **Microsoft Edge** | Yes | Supported when WebUSB and Web Serial are available |
+| **Firefox / Safari** | File editing/conversion may work | No direct USB support through the APIs required by this app |
 
-- `FileReader` / file input handling
-- HTML5 drag-and-drop events for per-list and bulk file loading
-- `Uint8Array`
-- `Blob`
-- browser-generated downloads
+If connecting fails:
 
-A current version of Chrome, Edge, Firefox, or Safari is recommended.
+1. Confirm that you are using a **USB data cable**, that the calculator is powered on, and that the correct device is selected.
+2. Close TI Connect or any other application/tab that may be holding the calculator's USB interface.
+3. If running locally, use `http://localhost:8000/` rather than opening the page as `file://`.
+4. For the Evo, allow both Web Serial initialization and WebUSB permission when prompted; retry the **Get Evo Device Lists — WebUSB** button if requested.
+5. Look at the app's status bar and Chrome DevTools → **Console** for connection or protocol errors.
 
 ## Privacy
 
-Calculator files are processed locally inside the browser tab. The application does not upload list data to a remote service.
+The app processes file data and transfers calculator lists **locally in the browser**. The static website or local Python HTTP server delivers the HTML but is not used as an intermediary for calculator list transfers. USB access requires your explicit browser permission.
 
-## Limitations
+## Limitations and Precautions
 
-- Designed for real-number lists.
-- Complex-number list data is not currently supported.
-- Some unsupported TI-84 Evo expression types may be rejected during import.
-- The application converts numeric values; textual display formatting from the original calculator file is not necessarily preserved because the file stores numeric data rather than the exact text originally typed.
-- Browsers can require explicit permission when the **Export all** commands trigger several downloads.
+- The application supports **real-number lists**, not complex-number lists or every calculator-specific expression type.
+- File-format conversion preserves supported numeric values, but may not preserve the exact original text formatting used when values were entered on the calculator.
+- The app displays up to **12 editor columns**, but Evo device operations target only **L1–L6**; Plus CE device import recognizes **L1–L11**.
+- Direct Plus CE sending is implemented but, as of v18, **not yet verified on physical Plus CE hardware** in this project. Test with a disposable list and confirm the result on the calculator first.
+- Sending to a calculator can **overwrite an existing populated destination list** after you confirm the prompt. Consider exporting a `.8xl`/`.8xl2` backup or using **Get Device Lists** first.
+- Standard calculator limits apply, including **999 elements per Plus CE list**.
+- Browsers may request separate Web Serial/WebUSB permissions or permission to download several files.
 
-## Repository
+## Project and Development
 
-Source code:
-
-https://github.com/realityexpander/TI-84-Evo-Plus-CE-List-Converter
+- **Repository:** https://github.com/realityexpander/TI-84-Evo-Plus-CE-List-Converter
+- **Development conversation:** https://chatgpt.com/share/6ab477f0-b560-83ea-9e50-590ea0bf7d30
 
 ## Copyright
 
