@@ -5,7 +5,7 @@ A browser-based **TI-84 Plus CE ↔ TI-84 Evo real-number list editor, converter
 <img width="600" alt="TI-84 Plus CE and Evo list editor" src="https://github.com/user-attachments/assets/12cbb662-b37b-409e-9288-800e152c087d" />
 
 - **Live app:** https://realityexpander.github.io/TI-84-Evo-Plus-CE-List-Converter/
-- **Step-by-step conversion instructions:** https://realityexpander.github.io/TI-84-Evo-Plus-CE-List-Converter/Convert-TI-84-Plus-CE-To-Evo-Instructions/
+- **Step-by-step conversion instructions using files (Not required with Latest Version):** https://realityexpander.github.io/TI-84-Evo-Plus-CE-List-Converter/Convert-TI-84-Plus-CE-To-Evo-Instructions/
 - **Source repository:** https://github.com/realityexpander/TI-84-Evo-Plus-CE-List-Converter
 
 **Current documented application version: 1.0v18.** File conversion and USB transfers run locally in your browser; calculator list data is not uploaded to a server.
