@@ -3,18 +3,19 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>TI-84 Plus CE &lt;-&gt; Evo Translator / Editor</title>
+<title>TI-84 Plus CE Lists ◀▶ Evo Lists</title>
+<link rel="icon" href="favicon.ico" sizes="any">
 <style>
 :root{color-scheme:light;--bg:#eef3f8;--panel:#fff;--line:#cbd5e1;--text:#172033;--muted:#607089;--accent:#1261a0;--accent2:#0b4e84;--danger:#b42318;--good:#16794b;--warn:#9a6700;--shadow:0 8px 28px rgba(23,32,51,.10)}
-*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--text);font:15px/1.45 system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}.app{max-width:1500px;margin:0 auto;padding:24px}.top{display:flex;gap:18px;align-items:flex-start;justify-content:space-between;flex-wrap:wrap}.title h1{font-size:clamp(24px,3vw,36px);line-height:1.12;margin:0 0 8px}.title p{margin:0;color:var(--muted);max-width:820px}.toolbar,.exportbar{display:flex;gap:10px;flex-wrap:wrap;align-items:center}.toolbar{margin:22px 0 10px}.bulk-drop{display:flex;align-items:center;justify-content:center;min-height:42px;padding:8px 16px;border:2px dashed #8ea1b7;border-radius:9px;background:#fff;color:var(--muted);font-weight:800;cursor:copy;transition:border-color .15s ease,background .15s ease,box-shadow .15s ease}.bulk-drop:hover{border-color:#617892}.bulk-drop.drag-over{border-color:var(--accent);background:#edf5ff;box-shadow:0 0 0 3px rgba(34,102,170,.12);color:var(--accent2)}.exportbar{margin:10px 0 18px}.btn{appearance:none;border:1px solid #a9b7c8;background:#fff;color:var(--text);font-weight:700;border-radius:9px;padding:10px 14px;cursor:pointer;box-shadow:0 1px 2px rgba(0,0,0,.04)}.btn:hover{border-color:#7f91a7;background:#f8fafc}.btn.primary{background:var(--accent);border-color:var(--accent);color:#fff}.btn.primary:hover{background:var(--accent2)}.btn.small{padding:7px 9px;font-size:12px}.btn.danger{color:var(--danger)}.status{min-height:24px;margin:6px 0 14px;padding:9px 12px;border:1px solid var(--line);border-radius:8px;background:#fff;color:var(--muted)}.status.good{color:var(--good);border-color:#a8d5c0;background:#f1fbf6}.status.warn{color:var(--warn);border-color:#e5c77b;background:#fff9e8}.status.bad{color:var(--danger);border-color:#efb1aa;background:#fff4f2}.gridwrap{overflow-x:auto;padding-bottom:10px}.columns{display:grid;grid-template-columns:repeat(6,minmax(190px,1fr));gap:12px;min-width:1180px}.column{background:var(--panel);border:1px solid var(--line);border-radius:12px;box-shadow:var(--shadow);overflow:hidden;min-height:280px}.column-top{padding:12px;border-bottom:1px solid var(--line);background:#f8fafc}.slot{font-size:11px;text-transform:uppercase;letter-spacing:.08em;color:var(--muted);font-weight:800;margin-bottom:6px}.name{width:100%;font:700 17px/1.2 ui-monospace,SFMono-Regular,Menlo,monospace;padding:8px 9px;border:2px dashed #8ea1b7;border-radius:7px;background:#fff;transition:border-color .15s ease,background .15s ease,box-shadow .15s ease}.name:hover{border-color:#617892}.name.drag-over{border-color:var(--accent);background:#edf5ff;box-shadow:0 0 0 3px rgba(34,102,170,.12)}.formatline{font-size:11px;color:var(--muted);height:18px;margin-top:5px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.column-actions{display:grid;grid-template-columns:1fr;gap:6px;margin-top:9px}.column-actions .btn{width:100%}.values{padding:10px}.row{display:grid;grid-template-columns:30px minmax(0,1fr) 24px;gap:6px;align-items:center;margin-bottom:6px}.rownum{text-align:right;color:var(--muted);font:12px ui-monospace,SFMono-Regular,Menlo,monospace;padding-right:3px}.value{width:100%;padding:7px 8px;border:1px solid #b8c5d3;border-radius:6px;font:14px ui-monospace,SFMono-Regular,Menlo,monospace;background:#fff}.value.invalid{border-color:var(--danger);background:#fff1f0;outline:1px solid #f2aaa3}.delete-item{appearance:none;border:0;background:transparent;color:var(--danger);font-size:19px;line-height:1;padding:2px 0;cursor:pointer;opacity:0;pointer-events:none;transition:opacity .12s ease,transform .12s ease}.row:hover .delete-item{opacity:1;pointer-events:auto}.delete-item:hover{transform:scale(1.12)}.empty{color:#8795a8;text-align:center;padding:28px 8px 18px;font-style:italic}.addrow{display:block;margin:10px auto 2px}.foot{margin-top:16px;color:var(--muted);font-size:12px}.foot code{background:#e5ebf2;padding:1px 4px;border-radius:4px}.copyright{margin-top:18px;padding-top:14px;border-top:1px solid var(--line);color:var(--muted);font-size:12px;line-height:1.7}.copyright a{color:var(--accent);font-weight:700;text-decoration:none}.copyright a:hover{text-decoration:underline}.confirm-dialog{border:0;border-radius:12px;padding:0;box-shadow:0 18px 60px rgba(23,32,51,.28);max-width:min(420px,calc(100vw - 32px));width:100%}.confirm-dialog::backdrop{background:rgba(23,32,51,.42)}.confirm-box{padding:22px}.confirm-box h2{margin:0 0 18px;font-size:20px;line-height:1.3}.confirm-actions{display:flex;justify-content:flex-end;gap:10px}.confirm-actions .btn{min-width:82px}.hidden{display:none!important}@media(max-width:760px){.app{padding:14px}.btn{padding:9px 11px}.status{font-size:13px}}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--text);font:15px/1.45 system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}.app{max-width:1500px;margin:0 auto;padding:24px}.top{display:flex;gap:18px;align-items:flex-start;justify-content:space-between;flex-wrap:wrap}.title h1{font-size:clamp(24px,3vw,36px);line-height:1.12;margin:0 0 8px}.title p{margin:0;color:var(--muted);max-width:820px}.toolbar,.exportbar{display:flex;gap:10px;flex-wrap:wrap;align-items:center}.toolbar{margin:22px 0 10px}.bulk-drop{display:flex;align-items:center;justify-content:center;min-height:42px;padding:8px 16px;border:2px dashed #8ea1b7;border-radius:9px;background:#fff;color:var(--muted);font-weight:800;cursor:copy;transition:border-color .15s ease,background .15s ease,box-shadow .15s ease}.bulk-drop:hover{border-color:#617892}.bulk-drop.drag-over{border-color:var(--accent);background:#edf5ff;box-shadow:0 0 0 3px rgba(34,102,170,.12);color:var(--accent2)}.exportbar{margin:10px 0 18px}.btn{appearance:none;border:1px solid #a9b7c8;background:#fff;color:var(--text);font-weight:700;border-radius:9px;padding:10px 14px;cursor:pointer;box-shadow:0 1px 2px rgba(0,0,0,.04)}.btn:hover{border-color:#7f91a7;background:#f8fafc}.btn.primary{background:var(--accent);border-color:var(--accent);color:#fff}.btn.primary:hover{background:var(--accent2)}.btn.small{padding:7px 9px;font-size:12px}.btn.danger{color:var(--danger)}.status{min-height:24px;margin:6px 0 14px;padding:9px 12px;border:1px solid var(--line);border-radius:8px;background:#fff;color:var(--muted)}.status.good{color:var(--good);border-color:#a8d5c0;background:#f1fbf6}.status.warn{color:var(--warn);border-color:#e5c77b;background:#fff9e8}.status.bad{color:var(--danger);border-color:#efb1aa;background:#fff4f2}.gridwrap{overflow-x:auto;padding-bottom:10px}.columns{display:grid;grid-template-columns:repeat(6,minmax(190px,1fr));gap:12px;min-width:1180px}.column{background:var(--panel);border:1px solid var(--line);border-radius:12px;box-shadow:var(--shadow);overflow:hidden;min-height:280px}.column-top{padding:12px;border-bottom:1px solid var(--line);background:#f8fafc}.slot{font-size:11px;text-transform:uppercase;letter-spacing:.08em;color:var(--muted);font-weight:800;margin-bottom:6px}.name{width:100%;font:700 17px/1.2 ui-monospace,SFMono-Regular,Menlo,monospace;padding:8px 9px;border:2px dashed #8ea1b7;border-radius:7px;background:#fff;transition:border-color .15s ease,background .15s ease,box-shadow .15s ease}.name:hover{border-color:#617892}.name.drag-over{border-color:var(--accent);background:#edf5ff;box-shadow:0 0 0 3px rgba(34,102,170,.12)}.formatline{font-size:11px;color:var(--muted);height:18px;margin-top:5px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.column-actions{display:grid;grid-template-columns:1fr;gap:6px;margin-top:9px}.column-actions .btn{width:100%}.drag-copy{cursor:grab}.drag-copy:active{cursor:grabbing}.drag-copy.dragging{opacity:.55}.name.copy-over{border-color:var(--good);background:#f1fbf6;box-shadow:0 0 0 3px rgba(22,121,75,.12)}.values{padding:10px}.row{display:grid;grid-template-columns:30px minmax(0,1fr) 24px;gap:6px;align-items:center;margin-bottom:6px}.rownum{text-align:right;color:var(--muted);font:12px ui-monospace,SFMono-Regular,Menlo,monospace;padding-right:3px}.value{width:100%;padding:7px 8px;border:1px solid #b8c5d3;border-radius:6px;font:14px ui-monospace,SFMono-Regular,Menlo,monospace;background:#fff}.value.invalid{border-color:var(--danger);background:#fff1f0;outline:1px solid #f2aaa3}.delete-item{appearance:none;border:0;background:transparent;color:var(--danger);font-size:19px;line-height:1;padding:2px 0;cursor:pointer;opacity:0;pointer-events:none;transition:opacity .12s ease,transform .12s ease}.row:hover .delete-item{opacity:1;pointer-events:auto}.delete-item:hover{transform:scale(1.12)}.empty{color:#8795a8;text-align:center;padding:28px 8px 18px;font-style:italic}.addrow{display:block;margin:10px auto 2px}.foot{margin-top:16px;color:var(--muted);font-size:12px}.foot code{background:#e5ebf2;padding:1px 4px;border-radius:4px}.copyright{margin-top:18px;padding-top:14px;border-top:1px solid var(--line);color:var(--muted);font-size:12px;line-height:1.7}.copyright a{color:var(--accent);font-weight:700;text-decoration:none}.copyright a:hover{text-decoration:underline}.confirm-dialog{border:0;border-radius:12px;padding:0;box-shadow:0 18px 60px rgba(23,32,51,.28);max-width:min(420px,calc(100vw - 32px));width:100%}.confirm-dialog::backdrop{background:rgba(23,32,51,.42)}.confirm-box{padding:22px}.confirm-box h2{margin:0 0 18px;font-size:20px;line-height:1.3}.confirm-actions{display:flex;justify-content:flex-end;gap:10px}.confirm-actions .btn{min-width:82px}.hidden{display:none!important}@media(max-width:760px){.app{padding:14px}.btn{padding:9px 11px}.status{font-size:13px}}
 </style>
 </head>
 <body>
 <div class="app">
   <div class="top">
     <div class="title">
-      <h1>TI-84 Plus CE &lt;-&gt; Evo List Translator / Editor</h1>
-      <p>Load TI-84 Plus CE <b>.8xl</b> or TI-84 Evo <b>.8xl2</b> real-number lists, edit the values, then export any column—or all loaded columns—to either format.</p>
+      <h1>TI-84 Plus CE Lists ◀▶ Evo Lists</h1>
+      <p>Import TI-84 Plus CE <b>.8xl</b> list files, TI-84 Evo <b>.8xl2</b> list files, get lists from a connected Evo or Plus CE, edit list values, then export any column—or all columns—to either format or send one list or all lists to a connected Evo or Plus CE.</p>
     </div>
   </div>
 
@@ -22,28 +23,32 @@
     <button class="btn primary" id="load8xl">Load List(s) — .8xl</button>
     <button class="btn primary" id="load8xl2">Load List(s) — .8xl2</button>
     <div class="bulk-drop" id="bulkDrop" tabindex="0" role="button" aria-label="Drag and drop here to import all list files">Drag &amp; Drop Here to Import All</div>
+    <button class="btn primary" id="importPlusCeWebUsb">Get Plus CE Device Lists — WebUSB</button>
+    <button class="btn primary" id="importEvoWebUsb" title="Automatically initializes the Evo CDC connection using Web Serial once per page session before importing via WebUSB">Get Evo Device Lists — WebUSB</button>
     <input class="hidden" id="file8xl" type="file" accept=".8xl,application/octet-stream" multiple>
     <input class="hidden" id="file8xl2" type="file" accept=".8xl2,application/octet-stream" multiple>
   </div>
 
   <div class="exportbar">
-    <button class="btn" id="exportAll8xl">Export all as .8xl</button>
-    <button class="btn" id="exportAll8xl2">Export all as .8xl2</button>
+    <button class="btn" id="exportAll8xl">Export all as .8xl files</button>
+    <button class="btn" id="exportAll8xl2">Export all as .8xl2 files</button>
+    <button class="btn primary" id="sendAllEvo">Send L1 to L6 to Evo — WebUSB</button>
+    <button class="btn primary" id="sendAllPlusCe" title="Send populated editor columns to matching Plus CE list numbers. Checks the calculator before replacing existing data.">Send Lists to Plus CE — WebUSB</button>
     <button class="btn danger" id="clearAll">Clear All</button>
   </div>
 
-  <div id="status" class="status">Ready. Load up to six list files.</div>
+  <div id="status" class="status">Ready. Load up to 12 list files. Lists 1–6 are shown by default.</div>
 
   <div class="gridwrap">
     <div id="columns" class="columns"></div>
   </div>
 
   <div class="foot">
-    Numeric cells accept ordinary decimal notation or scientific notation such as <code>1.25e-6</code>. CE real values use the calculator's 14-digit BCD representation. Evo files use the TI-84 Evo CBOR container and numeric-expression layout. All processing stays in this browser tab.
+    Numeric cells accept ordinary decimal notation or scientific notation such as <code>1.25e-6</code>. CE real values use the calculator's 14-digit BCD representation. Evo files use the TI-84 Evo CBOR container and numeric-expression layout. Plus CE WebUSB supports importing and sending lists, with confirmation before replacing populated calculator lists. Evo WebUSB supports importing and sending standard L1–L6 lists; the WebUSB import button automatically primes the Evo CDC port via Web Serial once per page session before reading data. Chrome may request Web Serial and WebUSB access separately the first time. The editor shows six lists by default and expands automatically when additional list slots are needed. All processing stays in this browser tab.
   </div>
 
   <footer class="copyright">
-    <div>©2026 Chris Athanas</div>
+    <div>©2026 Chris Athanas — 1.0v18</div>
     <div>Link to source on <a href="https://github.com/realityexpander/TI-84-Evo-Plus-CE-List-Converter" target="_blank" rel="noopener noreferrer">GitHub</a></div>
   </footer>
 </div>
@@ -83,7 +88,9 @@ FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.
 (() => {
 'use strict';
 
-const MAX_COLUMNS = 6;
+const DEFAULT_COLUMNS = 6;
+const MAX_COLUMNS = 12;
+let visibleColumns = DEFAULT_COLUMNS;
 const columns = Array.from({length:MAX_COLUMNS}, (_,i) => ({
   slot:i,
   name:`L${i+1}`,
@@ -97,6 +104,7 @@ const columns = Array.from({length:MAX_COLUMNS}, (_,i) => ({
 const $ = s => document.querySelector(s);
 const columnHost = $('#columns');
 const statusEl = $('#status');
+const COLUMN_COPY_MIME = 'application/x-ti84-list-column';
 
 function setStatus(message, kind='') {
   statusEl.textContent = message;
@@ -115,7 +123,7 @@ function sanitizeDownloadBase(name, fallback) {
 
 function validTiListName(name) {
   const s = String(name || '').trim().toUpperCase();
-  if (/^L[1-6]$/.test(s)) return s;
+  if (/^L(?:[1-9]|1[0-2])$/.test(s)) return s;
   if (/^[A-ZΘ][A-Z0-9Θ]{0,4}$/.test(s)) return s.replaceAll('Θ','θ');
   return null;
 }
@@ -124,9 +132,26 @@ function effectiveTiName(col) {
   return validTiListName(col.name) || validTiListName(col.tiName) || `L${col.slot+1}`;
 }
 
+function ensureVisibleColumns(count) {
+  const wanted = Math.max(DEFAULT_COLUMNS, Math.min(MAX_COLUMNS, Number(count) || DEFAULT_COLUMNS));
+  if (wanted > visibleColumns) visibleColumns = wanted;
+}
+
 function renderAll() {
+  const plusCeBulkButton = $('#sendAllPlusCe');
+  if(plusCeBulkButton){
+    const highest = columns.reduce((last,col,i) => (col.values.length ? i : last), -1);
+    plusCeBulkButton.textContent = highest >= 0
+      ? `Send L1 to L${highest+1} to Plus CE — WebUSB`
+      : 'Send Lists to Plus CE — WebUSB';
+    plusCeBulkButton.title = highest >= 0
+      ? `Send the ${columns.filter(c=>c.values.length).length} populated editor column(s) to their matching Plus CE L1–L${highest+1} destination slots; skip empty columns.`
+      : 'Load list values first, then send populated columns to the connected Plus CE.';
+  }
   columnHost.innerHTML = '';
-  columns.forEach((col, index) => {
+  columnHost.style.gridTemplateColumns = `repeat(${visibleColumns},minmax(190px,1fr))`;
+  columnHost.style.minWidth = `${Math.max(1180, visibleColumns * 198)}px`;
+  columns.slice(0, visibleColumns).forEach((col, index) => {
     const card = document.createElement('section');
     card.className = 'column';
     card.dataset.slot = index;
@@ -147,23 +172,33 @@ function renderAll() {
     name.addEventListener('dragenter', e => {
       e.preventDefault();
       e.stopPropagation();
-      name.classList.add('drag-over');
+      const isColumnCopy = e.dataTransfer && Array.from(e.dataTransfer.types || []).includes(COLUMN_COPY_MIME);
+      name.classList.toggle('copy-over', !!isColumnCopy);
+      name.classList.toggle('drag-over', !isColumnCopy);
     });
     name.addEventListener('dragover', e => {
       e.preventDefault();
       e.stopPropagation();
       if (e.dataTransfer) e.dataTransfer.dropEffect = 'copy';
-      name.classList.add('drag-over');
+      const isColumnCopy = e.dataTransfer && Array.from(e.dataTransfer.types || []).includes(COLUMN_COPY_MIME);
+      name.classList.toggle('copy-over', !!isColumnCopy);
+      name.classList.toggle('drag-over', !isColumnCopy);
     });
     name.addEventListener('dragleave', e => {
       e.preventDefault();
       e.stopPropagation();
-      name.classList.remove('drag-over');
+      name.classList.remove('drag-over','copy-over');
     });
     name.addEventListener('drop', async e => {
       e.preventDefault();
       e.stopPropagation();
-      name.classList.remove('drag-over');
+      name.classList.remove('drag-over','copy-over');
+      const sourceText = e.dataTransfer ? e.dataTransfer.getData(COLUMN_COPY_MIME) : '';
+      if (sourceText !== '') {
+        const sourceIndex = Number(sourceText);
+        if (Number.isInteger(sourceIndex)) copyColumnData(sourceIndex,index);
+        return;
+      }
       const file = e.dataTransfer && e.dataTransfer.files && e.dataTransfer.files[0];
       if (!file) return;
       await loadFileIntoColumn(file, index);
@@ -175,17 +210,34 @@ function renderAll() {
 
     const actions = document.createElement('div');
     actions.className = 'column-actions';
-    actions.append(
+    const actionButtons = [
       makeButton('Load .8xl*', 'btn small', () => loadSingleIntoColumn(index)),
       makeButton('Save .8xl', 'btn small', () => saveColumn(index,'8xl')),
-      makeButton('Save .8xl2', 'btn small', () => saveColumn(index,'8xl2')),
-      makeButton('Clear', 'btn small danger', async () => {
-        if (!(await confirmClearLists())) return;
-        clearColumn(index);
-        renderAll();
-        setStatus(`List ${index+1} data cleared.`, 'good');
-      })
-    );
+      makeButton('Save .8xl2', 'btn small', () => saveColumn(index,'8xl2'))
+    ];
+    if(index < 6) actionButtons.push(makeButton(`Send to Evo as L${index+1}`, 'btn small primary', () => sendColumnToEvo(index)));
+    actionButtons.push(makeButton(`Send to Plus CE as L${index+1}`, 'btn small primary', () => sendColumnToPlusCe(index)));
+    const dragCopy = makeButton('Drag To Copy', 'btn small drag-copy', () => {
+      setStatus(`Drag the “Drag To Copy” button from List ${index+1} onto another column's dashed file-name target.`);
+    });
+    dragCopy.draggable = true;
+    dragCopy.title = `Drag to another list's dashed file-name target to copy List ${index+1} data`;
+    dragCopy.addEventListener('dragstart', e => {
+      if(!e.dataTransfer)return;
+      e.dataTransfer.effectAllowed='copy';
+      e.dataTransfer.setData(COLUMN_COPY_MIME,String(index));
+      e.dataTransfer.setData('text/plain',`TI-84 List ${index+1}`);
+      dragCopy.classList.add('dragging');
+    });
+    dragCopy.addEventListener('dragend', () => dragCopy.classList.remove('dragging'));
+    actionButtons.push(dragCopy);
+    actionButtons.push(makeButton('Clear', 'btn small danger', async () => {
+      if (!(await confirmClearLists(`Confirm Clear List ${index+1}?`))) return;
+      clearColumn(index);
+      renderAll();
+      setStatus(`List ${index+1} data cleared.`, 'good');
+    }));
+    actions.append(...actionButtons);
 
     top.append(slot,name,fmt,actions);
     card.append(top);
@@ -270,6 +322,19 @@ function clearColumn(index) {
   col.loaded = false;
   col.sourceFormat = '';
   col.sourceFile = '';
+}
+
+function copyColumnData(sourceIndex,targetIndex) {
+  if(sourceIndex<0||sourceIndex>=MAX_COLUMNS||targetIndex<0||targetIndex>=MAX_COLUMNS)return;
+  if(sourceIndex===targetIndex){setStatus(`List ${targetIndex+1} is already the source column.`,'warn');return;}
+  const source=columns[sourceIndex],target=columns[targetIndex];
+  target.values=source.values.map(v=>String(v));
+  target.loaded=target.values.length>0;
+  target.sourceFormat=target.values.length?`Copy of List ${sourceIndex+1}`:'';
+  target.sourceFile=target.values.length?`List ${sourceIndex+1}`:'';
+  ensureVisibleColumns(targetIndex+1);
+  renderAll();
+  setStatus(`Copied ${target.values.length} value${target.values.length===1?'':'s'} from List ${sourceIndex+1} to List ${targetIndex+1}.`,'good');
 }
 
 function confirmClearLists(message = 'Confirm Clear All Lists?') {
@@ -590,11 +655,18 @@ function evoScalarToText(data,offset){
     }
     if(tag===0x001f||tag===0x0020){
       const wordCount=(i-offset)/2;
-      if(wordCount<2)throw new Error('Invalid Evo integer expression.');
-      const limbCount=le16(data,i-2);
-      if(limbCount+1!==wordCount)throw new Error('Invalid Evo integer limb count.');
       let mag=0n;
-      for(let k=0;k<limbCount;k++)mag |= BigInt(le16(data,offset+k*2)) << BigInt(16*k);
+      // TI-84 Evo uses a compact special case for integer zero: 0000 1F00
+      // (or the negative-integer tag, though zero remains unsigned in display).
+      // Nonzero integers use one or more 16-bit limbs followed by a limb-count word.
+      if(wordCount===1 && le16(data,offset)===0){
+        mag=0n;
+      }else{
+        if(wordCount<2)throw new Error('Invalid Evo integer expression.');
+        const limbCount=le16(data,i-2);
+        if(limbCount+1!==wordCount)throw new Error('Invalid Evo integer limb count.');
+        for(let k=0;k<limbCount;k++)mag |= BigInt(le16(data,offset+k*2)) << BigInt(16*k);
+      }
       const neg=tag===0x0020 && mag!==0n;
       return {text:(neg?'-':'')+mag.toString(),next:i+2};
     }
@@ -648,6 +720,1274 @@ function make8xl2(values,tiName='L1'){
   return file;
 }
 
+
+
+// ---------- direct TI-84 Plus CE hardware import ----------
+// The Plus CE uses TI's DUSB/CARS protocol over raw USB bulk endpoints.
+// This implementation is read-only: it requests the variable directory and
+// retrieves populated standard real lists L1-L11. L1-L6 may be reported with
+// Unicode subscript digits by the calculator. It does not write, delete,
+// execute, or modify calculator variables.
+const CE_USB_VENDOR_ID=0x0451;
+const CE_USB_PRODUCT_ID=0xe008;
+const CE_LINK_TIMEOUT=5000;
+const CE_RAW_BUF_REQ=0x01, CE_RAW_BUF_ALLOC=0x02, CE_RAW_VDATA=0x03, CE_RAW_VDATA_LAST=0x04, CE_RAW_ACK=0x05;
+const CE_V_PING=0x0001, CE_V_DIR_REQ=0x0009, CE_V_VAR_HDR=0x000a, CE_V_RTS=0x000b, CE_V_VAR_REQ=0x000c, CE_V_VAR_CNTS=0x000d, CE_V_MODE_SET=0x0012, CE_V_DATA_ACK=0xaa00, CE_V_DELAY=0xbb00, CE_V_EOT=0xdd00, CE_V_ERROR=0xee00;
+const CE_AID_VAR_SIZE=0x0001, CE_AID_VAR_TYPE=0x0002, CE_AID_ARCHIVED=0x0003, CE_AID_VAR_VERSION=0x0008, CE_AID_DATATYPE=0x0011;
+const CE_DEBUG=true;
+function ceHex(data,max=160){
+  const a=data instanceof Uint8Array?data:new Uint8Array(data||[]),shown=a.slice(0,max);
+  const text=Array.from(shown,b=>b.toString(16).padStart(2,'0')).join(' ');
+  return text+(a.length>max?` … (${a.length} bytes total)`:` (${a.length} bytes)`);
+}
+function ceDebug(...args){if(CE_DEBUG)console.log('[TI-84 Plus CE USB]',...args);}
+function ceWarn(...args){if(CE_DEBUG)console.warn('[TI-84 Plus CE USB]',...args);}
+
+function cePushBE32(out,v){out.push((v>>>24)&255,(v>>>16)&255,(v>>>8)&255,v&255);}
+function ceBE16(a,o=0){return ((a[o]<<8)|a[o+1])>>>0;}
+function ceBE32(a,o=0){return ((a[o]*0x1000000)+(a[o+1]<<16)+(a[o+2]<<8)+a[o+3])>>>0;}
+function ceMakeRawPacket(type,data=new Uint8Array(0)){
+  const d=data instanceof Uint8Array?data:Uint8Array.from(data),out=[];cePushBE32(out,d.length);out.push(type&255,...d);return Uint8Array.from(out);
+}
+function ceParseRawPacket(raw){
+  if(raw.length<5)throw new Error('Short Plus CE raw USB packet.');
+  const size=ceBE32(raw,0);if(raw.length!==size+5)throw new Error('Malformed Plus CE raw USB packet length.');
+  return {size,type:raw[4],data:raw.slice(5)};
+}
+function ceMakeVirtualPacket(type,data=new Uint8Array(0)){
+  const d=data instanceof Uint8Array?data:Uint8Array.from(data),out=[];cePushBE32(out,d.length);pushBE16(out,type);out.push(...d);return Uint8Array.from(out);
+}
+function ceParseVarHeader(data){
+  let o=0;
+  const need=n=>{if(o+n>data.length)throw new Error('Truncated Plus CE variable header.');};
+  need(1);const folderLen=data[o++];need(folderLen+(folderLen?1:0));
+  const folder=folderLen?td.decode(data.slice(o,o+folderLen)):'';o+=folderLen+(folderLen?1:0);
+  need(1);const nameLen=data[o++];need(nameLen+(nameLen?1:0));
+  const name=nameLen?td.decode(data.slice(o,o+nameLen)):'';o+=nameLen+(nameLen?1:0);
+  need(2);const nattrs=ceBE16(data,o);o+=2;const attrs=new Map();
+  for(let i=0;i<nattrs;i++){
+    need(3);const id=ceBE16(data,o);o+=2;const ok=data[o++]===0;
+    let value=new Uint8Array(0);
+    if(ok){need(2);const size=ceBE16(data,o);o+=2;need(size);value=data.slice(o,o+size);o+=size;}
+    attrs.set(id,{ok,value});
+  }
+  return {folder,name,attrs};
+}
+function ceAttrUInt(entry,id){
+  const attr=entry.attrs.get(id);if(!attr?.ok||!attr.value.length)return null;
+  let v=0;for(const b of attr.value)v=v*256+b;return v;
+}
+// VAR_TYPE is normally a 4-byte DUSB datatype such as F0 07 00 01.
+// The low byte is the TI variable type (01 = real list).
+function ceVarTypeId(entry){
+  const raw=ceAttrUInt(entry,CE_AID_VAR_TYPE);
+  return raw===null?null:(raw&0xff);
+}
+const CE_SUBSCRIPT_DIGITS = new Map([
+  ['₁','1'],['₂','2'],['₃','3'],['₄','4'],['₅','5'],['₆','6']
+]);
+function ceNormalizeListName(name){
+  const raw=String(name||'').trim();
+  // Plus CE directory names for the built-in lists are typically L₁ through L₆.
+  // L7 through L11 use ordinary ASCII digits. Normalize only recognized standard
+  // names for display/editor placement; requests still use the original directory name.
+  if(raw.length===2 && (raw[0]==='L'||raw[0]==='l') && CE_SUBSCRIPT_DIGITS.has(raw[1])){
+    return `L${CE_SUBSCRIPT_DIGITS.get(raw[1])}`;
+  }
+  const upper=raw.toUpperCase();
+  if(/^L(?:[1-9]|1[01])$/.test(upper))return upper;
+  // Retain support for the token-code representation seen in some tooling/logs.
+  const cps=Array.from(raw);
+  if(cps.length===1){const cp=cps[0].codePointAt(0);if(cp>=0xe830&&cp<=0xe835)return `L${cp-0xe830+1}`;}
+  return raw;
+}
+function ceStandardListNumber(name){
+  const normalized=ceNormalizeListName(name),m=normalized.match(/^L(?:([1-9])|(1[01]))$/i);
+  return m?Number(m[1]||m[2]):null;
+}
+function ceDisplayListName(entry){return ceNormalizeListName(entry.name);}
+function parseCeListPayload(data){
+  const a=data instanceof Uint8Array?data:new Uint8Array(data);
+  if(a.length<2)throw new Error('Invalid Plus CE list payload.');
+  const count=le16(a,0),expected=2+count*9;
+  if(a.length!==expected)throw new Error(`Plus CE list payload length ${a.length} does not match ${count} real value${count===1?'':'s'} (${expected} bytes expected).`);
+  const values=[];for(let i=0;i<count;i++)values.push(tiRealToString(a.slice(2+i*9,11+i*9)));return values;
+}
+// TI-84 Plus CE DUSB RTS (request-to-send), following libticalcs calc_84p.cc
+// and the open DUSB sender in Redgale/TICAI-TI84-Cesium-Auto-Installer.
+// The destination name is independent of the editor's filename.
+const CE_SEND_MAX_ELEMENTS = 999; // TI-84 Plus CE operating-system list limit.
+const CE_BUILTIN_NAMES = ['L₁','L₂','L₃','L₄','L₅','L₆'];
+function ceTargetName(index,directory){
+  const target = `L${index+1}`;
+  const found = (directory||[]).find(entry=>ceVarTypeId(entry)===1 && ceStandardListNumber(entry.name)===index+1);
+  return found?.name || (index<6 ? CE_BUILTIN_NAMES[index] : target);
+}
+function ceMakeListPayload(values){
+  if(values.length>CE_SEND_MAX_ELEMENTS)throw new Error(`Plus CE supports at most ${CE_SEND_MAX_ELEMENTS} elements per list; received ${values.length}.`);
+  const bytes=[];pushLE16(bytes,values.length);
+  for(const value of values) bytes.push(...tiRealFromString(value));
+  return Uint8Array.from(bytes);
+}
+function ceMakeRtsPayload(name,contentLength,{archived=false,version=0}={}){
+  const nameBytes=te.encode(name);
+  if(nameBytes.length<1 || nameBytes.length>31)throw new Error('Invalid Plus CE destination name.');
+  if(!Number.isInteger(contentLength)||contentLength<2||contentLength>0xffffffff)throw new Error('Invalid Plus CE list size.');
+  const out=[0,nameBytes.length,...nameBytes,0]; // empty folder + UTF-8 name + NUL
+  cePushBE32(out,contentLength);
+  out.push(1); // silent RTS mode
+  pushBE16(out,3);
+  pushBE16(out,CE_AID_VAR_TYPE);pushBE16(out,4);out.push(0xf0,0x0f,0x00,0x01); // 84+CE real-list type
+  pushBE16(out,CE_AID_ARCHIVED);pushBE16(out,1);out.push(archived?1:0);
+  pushBE16(out,CE_AID_VAR_VERSION);pushBE16(out,4);out.push(0,0,0,version&255);
+  return Uint8Array.from(out);
+}
+function ceAssertDataAck(response,stage,target){
+  if(response.type!==CE_V_DATA_ACK){
+    throw new Error(`Plus CE ${target}: expected DATA_ACK (0xAA00) after ${stage}, received 0x${response.type.toString(16).padStart(4,'0')}.`);
+  }
+  ceDebug(`${target} DATA_ACK`,{stage,data:ceHex(response.data)});
+}
+class PlusCeWebUsbTransport{
+  constructor(device){this.device=device;this.interfaceNumber=null;this.inEndpoint=null;this.outEndpoint=null;this.inPacketSize=64;this.bufferSize=1018;this.rx=new Uint8Array(0);}
+  static async connect(){
+    if(!navigator.usb)throw new Error('WebUSB is not available in this browser. Use a current Chromium-based desktop browser on HTTPS or localhost.');
+    await usbRecoverPreviouslyOpenedDevice(CE_USB_VENDOR_ID,CE_USB_PRODUCT_ID,'TI-84 Plus CE USB',ceWarn);
+    const device=await navigator.usb.requestDevice({filters:[{vendorId:CE_USB_VENDOR_ID,productId:CE_USB_PRODUCT_ID}]});
+    const t=new PlusCeWebUsbTransport(device);
+    try{await t.open();activeWebUsbTransports.add(t);return t;}
+    catch(err){try{await t.close();}catch{}throw err;}
+  }
+  async open(){
+    await this.device.open();
+    if(!this.device.configuration){
+      const cfg=this.device.configurations?.[0];if(!cfg)throw new Error('The Plus CE exposes no USB configuration.');
+      await this.device.selectConfiguration(cfg.configurationValue);
+    }
+    const configs=this.device.configuration?.interfaces||[];let chosen=null;
+    for(const iface of configs){
+      for(const alt of iface.alternates||[]){
+        const inEp=(alt.endpoints||[]).find(e=>e.direction==='in'&&e.type==='bulk');
+        const outEp=(alt.endpoints||[]).find(e=>e.direction==='out'&&e.type==='bulk');
+        if(inEp&&outEp){chosen={iface,alt,inEp,outEp};break;}
+      }
+      if(chosen)break;
+    }
+    if(!chosen)throw new Error('Could not find the Plus CE bulk USB interface. Close TI-Connect/other calculator software and reconnect the calculator.');
+    this.interfaceNumber=chosen.iface.interfaceNumber;
+    ceDebug('Selected device',{productName:this.device.productName,manufacturerName:this.device.manufacturerName,serialNumber:this.device.serialNumber,vendorId:`0x${this.device.vendorId.toString(16)}`,productId:`0x${this.device.productId.toString(16)}`});
+    ceDebug('Using USB interface',{configuration:this.device.configuration?.configurationValue,interfaceNumber:this.interfaceNumber,alternateSetting:chosen.alt.alternateSetting,inEndpoint:chosen.inEp.endpointNumber,outEndpoint:chosen.outEp.endpointNumber,inPacketSize:chosen.inEp.packetSize,outPacketSize:chosen.outEp.packetSize});
+    try{await this.device.claimInterface(this.interfaceNumber);}catch(err){throw new Error(`Could not claim the Plus CE USB interface: ${err.message}`);}
+    if(chosen.iface.alternate?.alternateSetting!==chosen.alt.alternateSetting){
+      try{await this.device.selectAlternateInterface(this.interfaceNumber,chosen.alt.alternateSetting);}catch{}
+    }
+    this.inEndpoint=chosen.inEp.endpointNumber;this.outEndpoint=chosen.outEp.endpointNumber;this.inPacketSize=chosen.inEp.packetSize||64;
+    await this.requestBufferSize();
+  }
+  async transferOut(data,timeout=CE_LINK_TIMEOUT){
+    ceDebug('USB bulk OUT',{endpoint:this.outEndpoint,bytes:data.length,hex:ceHex(data)});
+    const result=await withTimeout(this.device.transferOut(this.outEndpoint,data),timeout,'Plus CE WebUSB write');
+    ceDebug('USB bulk OUT complete',{status:result.status,bytesWritten:result.bytesWritten});
+    if(result.status!=='ok')throw new Error(`Plus CE WebUSB write failed: ${result.status}.`);
+  }
+  async fillRx(timeout){
+    ceDebug('USB bulk IN wait',{endpoint:this.inEndpoint,timeoutMs:timeout,bufferedBytes:this.rx.length});
+    const result=await usbTransferInAbortable(this.device,this.inEndpoint,16384,timeout,'Plus CE WebUSB read',ceWarn);
+    if(result.status!=='ok'||!result.data)throw new Error(`Plus CE WebUSB read failed: ${result.status}.`);
+    const chunk=new Uint8Array(result.data.buffer,result.data.byteOffset,result.data.byteLength);
+    ceDebug('USB bulk IN',{endpoint:this.inEndpoint,status:result.status,bytes:chunk.length,hex:ceHex(chunk)});
+    if(chunk.length)this.rx=appendBytes(this.rx,new Uint8Array(chunk));
+  }
+  async readRaw(timeout=CE_LINK_TIMEOUT){
+    const deadline=Date.now()+timeout;
+    while(this.rx.length<5){const remain=deadline-Date.now();if(remain<=0)throw new Error('Plus CE WebUSB read timed out.');await this.fillRx(remain);}
+    const size=ceBE32(this.rx,0),total=size+5;if(total>1024*1024)throw new Error(`Unreasonable Plus CE raw packet size ${size}.`);
+    while(this.rx.length<total){const remain=deadline-Date.now();if(remain<=0)throw new Error('Plus CE WebUSB read timed out.');await this.fillRx(remain);}
+    const raw=this.rx.slice(0,total);this.rx=this.rx.slice(total);return ceParseRawPacket(raw);
+  }
+  async requestBufferSize(){
+    await this.transferOut(ceMakeRawPacket(CE_RAW_BUF_REQ,Uint8Array.from([0,0,4,0])));
+    const reply=await this.readRaw();if(reply.type!==CE_RAW_BUF_ALLOC||reply.data.length!==4)throw new Error(`Plus CE protocol expected buffer allocation, received raw packet 0x${reply.type.toString(16)}.`);
+    const reported=ceBE32(reply.data,0);this.bufferSize=Math.max(64,Math.min(reported||1018,1018));
+    ceDebug('DUSB buffer handshake',{reported,using:this.bufferSize,raw:ceHex(reply.data)});
+  }
+  async sendRawAck(){await this.transferOut(ceMakeRawPacket(CE_RAW_ACK,Uint8Array.from([0xe0,0x00])));}
+  async handleBufferRequest(raw){
+    if(raw.type!==CE_RAW_BUF_REQ)return false;
+    if(raw.data.length!==4)throw new Error('Malformed Plus CE buffer-size request.');
+    const requested=ceBE32(raw.data,0),allocated=Math.max(64,Math.min(requested||1018,1018));this.bufferSize=allocated;
+    const d=[];cePushBE32(d,allocated);await this.transferOut(ceMakeRawPacket(CE_RAW_BUF_ALLOC,Uint8Array.from(d)));return true;
+  }
+  async expectRawAck(){
+    while(true){const raw=await this.readRaw();if(await this.handleBufferRequest(raw))continue;
+      if(raw.type!==CE_RAW_ACK||raw.data.length<2||raw.data[0]!==0xe0||raw.data[1]!==0x00)throw new Error(`Plus CE protocol expected USB ACK, received raw packet 0x${raw.type.toString(16)}.`);return;}
+  }
+  async sendVirtual(type,data=new Uint8Array(0)){
+    const virtual=ceMakeVirtualPacket(type,data),chunkSize=Math.max(1,this.bufferSize-5);
+    for(let o=0;o<virtual.length;o+=chunkSize){const chunk=virtual.slice(o,Math.min(o+chunkSize,virtual.length)),last=o+chunkSize>=virtual.length;
+      await this.transferOut(ceMakeRawPacket(last?CE_RAW_VDATA_LAST:CE_RAW_VDATA,chunk));await this.expectRawAck();}
+  }
+  async receiveVirtual(timeout=CE_LINK_TIMEOUT){
+    let first=true,declared=0,type=0,payload=new Uint8Array(0);
+    while(true){let raw=await this.readRaw(timeout);if(await this.handleBufferRequest(raw))continue;
+      if(raw.type!==CE_RAW_VDATA&&raw.type!==CE_RAW_VDATA_LAST)throw new Error(`Unexpected Plus CE raw packet 0x${raw.type.toString(16)}.`);
+      if(first){if(raw.data.length<6)throw new Error('Short Plus CE virtual-packet header.');declared=ceBE32(raw.data,0);type=ceBE16(raw.data,4);payload=appendBytes(payload,raw.data.slice(6));first=false;}
+      else payload=appendBytes(payload,raw.data);
+      await this.sendRawAck();if(raw.type===CE_RAW_VDATA_LAST)break;
+    }
+    if(payload.length!==declared)throw new Error(`Plus CE virtual packet length mismatch (${payload.length}/${declared}).`);
+    if(type===CE_V_DELAY){const us=payload.length>=4?ceBE32(payload,0):0;await new Promise(r=>setTimeout(r,Math.min(us/1000,400)));return this.receiveVirtual(timeout);}
+    if(type===CE_V_ERROR){const code=payload.length>=2?ceBE16(payload,0):0;throw new Error(`Plus CE calculator returned error 0x${code.toString(16).padStart(4,'0')}.`);}
+    return {type,data:payload};
+  }
+  async ping(){
+    const payload=Uint8Array.from([0,3,0,1,0,0,0,0,0x07,0xd0]);
+    ceDebug('PING -> NORMAL mode',ceHex(payload));
+    await this.sendVirtual(CE_V_PING,payload);const r=await this.receiveVirtual();
+    ceDebug('PING response',{type:`0x${r.type.toString(16).padStart(4,'0')}`,data:ceHex(r.data)});
+    if(r.type!==CE_V_MODE_SET)throw new Error(`Plus CE did not enter normal USB mode (response 0x${r.type.toString(16)}).`);
+  }
+  async directory(){
+    const aids=[CE_AID_VAR_SIZE,CE_AID_VAR_TYPE,CE_AID_ARCHIVED],d=[];cePushBE32(d,aids.length);for(const aid of aids)pushBE16(d,aid);d.push(0,1,0,1,0,1,1);
+    ceDebug('Directory request',{aids:aids.map(x=>`0x${x.toString(16).padStart(4,'0')}`),payload:ceHex(Uint8Array.from(d))});
+    await this.sendVirtual(CE_V_DIR_REQ,Uint8Array.from(d));const entries=[];
+    while(true){
+      const r=await this.receiveVirtual();
+      if(r.type===CE_V_EOT){ceDebug('Directory EOT',{entries:entries.length});break;}
+      if(r.type!==CE_V_VAR_HDR)throw new Error(`Plus CE directory returned unexpected packet 0x${r.type.toString(16)}.`);
+      ceDebug('Directory VAR_HDR raw',ceHex(r.data));
+      const entry=ceParseVarHeader(r.data);
+      const attrs={};for(const [id,a] of entry.attrs)attrs[`0x${id.toString(16).padStart(4,'0')}`]={ok:a.ok,raw:ceHex(a.value),uint:a.ok&&a.value.length?ceAttrUInt(entry,id):null};
+      ceDebug('Directory entry decoded',{folder:entry.folder,name:entry.name,standardList:ceStandardListNumber(entry.name),rawVarType:ceAttrUInt(entry,CE_AID_VAR_TYPE),varTypeId:ceVarTypeId(entry),size:ceAttrUInt(entry,CE_AID_VAR_SIZE),archived:ceAttrUInt(entry,CE_AID_ARCHIVED),attrs});
+      entries.push(entry);
+    }
+    return entries;
+  }
+  async getList(entry){
+    const nameBytes=te.encode(entry.name),d=[];d.push(0);d.push(nameBytes.length,...nameBytes,0);d.push(1,0xff,0xff,0xff,0xff);
+    const aids=[CE_AID_ARCHIVED,CE_AID_VAR_VERSION,CE_AID_VAR_SIZE];pushBE16(d,aids.length);for(const aid of aids)pushBE16(d,aid);
+    pushBE16(d,1);pushBE16(d,CE_AID_DATATYPE);pushBE16(d,4);d.push(0xf0,0x07,0x00,0x01);d.push(0,0);
+    ceDebug(`Requesting ${ceDisplayListName(entry)}`,{directoryName:entry.name,requestPayload:ceHex(Uint8Array.from(d)),directorySize:ceAttrUInt(entry,CE_AID_VAR_SIZE),directoryRawType:ceAttrUInt(entry,CE_AID_VAR_TYPE),directoryTypeId:ceVarTypeId(entry)});
+    await this.sendVirtual(CE_V_VAR_REQ,Uint8Array.from(d));
+    const hdr=await this.receiveVirtual();if(hdr.type!==CE_V_VAR_HDR)throw new Error(`Plus CE list request for ${ceDisplayListName(entry)} did not return a variable header.`);
+    const parsedHdr=ceParseVarHeader(hdr.data);ceDebug(`${ceDisplayListName(entry)} response VAR_HDR`,{raw:ceHex(hdr.data),name:parsedHdr.name,size:ceAttrUInt(parsedHdr,CE_AID_VAR_SIZE),rawVarType:ceAttrUInt(parsedHdr,CE_AID_VAR_TYPE),varTypeId:ceVarTypeId(parsedHdr)});
+    const contents=await this.receiveVirtual();if(contents.type!==CE_V_VAR_CNTS)throw new Error(`Plus CE list request for ${ceDisplayListName(entry)} did not return variable contents.`);
+    ceDebug(`${ceDisplayListName(entry)} contents`,{bytes:contents.data.length,head:ceHex(contents.data,96)});return contents.data;
+  }
+  async sendList(name,values,{archived=false}={}){
+    const payload=ceMakeListPayload(values);
+    const rts=ceMakeRtsPayload(name,payload.length,{archived});
+    ceDebug('Sending Plus CE list RTS',{target:name,values:values.length,bytes:payload.length,archived,rts:ceHex(rts)});
+    await this.sendVirtual(CE_V_RTS,rts);
+    ceAssertDataAck(await this.receiveVirtual(), 'RTS', name);
+    ceDebug('Sending Plus CE variable contents',{target:name,bytes:payload.length,hex:ceHex(payload,96)});
+    await this.sendVirtual(CE_V_VAR_CNTS,payload);
+    ceAssertDataAck(await this.receiveVirtual(), 'variable contents', name);
+    await this.sendVirtual(CE_V_EOT);
+    // libticalcs pauses 50 ms between transfers to avoid a busy calculator.
+    await new Promise(resolve=>setTimeout(resolve,60));
+    ceDebug('Plus CE list sent successfully',{target:name,values:values.length,bytes:payload.length});
+  }
+  async close(){
+    activeWebUsbTransports.delete(this);
+    ceDebug('Closing Plus CE WebUSB transport',{opened:this.device?.opened,interfaceNumber:this.interfaceNumber,claimedInterfaces:usbClaimedInterfaces(this.device),bufferedBytes:this.rx.length});
+    this.rx=new Uint8Array(0);
+    await usbReleaseAndClose(this.device,'TI-84 Plus CE USB',ceWarn,[this.interfaceNumber]);
+    ceDebug('Plus CE WebUSB transport closed',{opened:this.device?.opened,claimedInterfaces:usbClaimedInterfaces(this.device)});
+    this.interfaceNumber=null;this.inEndpoint=null;this.outEndpoint=null;
+  }
+}
+async function importListsFromPlusCe(){
+  let transport=null;
+  try{
+    setStatus('Select your TI-84 Plus CE in the WebUSB device chooser…');transport=await PlusCeWebUsbTransport.connect();
+    setStatus('Connected to TI-84 Plus CE via WebUSB. Reading list directory…');await transport.ping();const directory=await transport.directory();
+    ceDebug('Directory scan complete',{totalEntries:directory.length});
+    for(const e of directory){
+      const rawType=ceAttrUInt(e,CE_AID_VAR_TYPE),typeId=ceVarTypeId(e),listNo=ceStandardListNumber(e.name),size=ceAttrUInt(e,CE_AID_VAR_SIZE);
+      ceDebug('Filter decision',{name:e.name,displayName:ceDisplayListName(e),rawType,typeId,listNo,size,normalizedName:ceNormalizeListName(e.name),decision:typeId!==1?'ignore: not real-list':listNo===null?'ignore: not L1-L11':(size!==null&&size<=2)?'skip: empty':'accept'});
+    }
+    const allLists=directory.filter(e=>ceVarTypeId(e)===1),nonStandardSkipped=allLists.filter(e=>ceStandardListNumber(e.name)===null).length;
+    const standard=allLists.filter(e=>ceStandardListNumber(e.name)!==null),emptySkipped=standard.filter(e=>{const n=ceAttrUInt(e,CE_AID_VAR_SIZE);return n!==null&&n<=2;}).length;
+    const populated=standard.filter(e=>{const n=ceAttrUInt(e,CE_AID_VAR_SIZE);return n===null||n>2;}).sort((a,b)=>ceStandardListNumber(a.name)-ceStandardListNumber(b.name));
+    ceDebug('Plus CE list candidates',{allRealLists:allLists.map(e=>({name:e.name,size:ceAttrUInt(e,CE_AID_VAR_SIZE),rawType:ceAttrUInt(e,CE_AID_VAR_TYPE),typeId:ceVarTypeId(e)})),standard:standard.map(e=>ceDisplayListName(e)),populated:populated.map(e=>ceDisplayListName(e)),emptySkipped,nonStandardSkipped});
+    if(!populated.length){ceWarn('No populated L1-L11 found. Review the preceding directory-entry and filter-decision logs.');let msg='Connected to the Plus CE, but no populated L1–L11 lists were found. See the browser console for Plus CE USB diagnostics.';if(emptySkipped)msg+=` Skipped ${emptySkipped} empty standard list${emptySkipped===1?'':'s'}.`;if(nonStandardSkipped)msg+=` Ignored ${nonStandardSkipped} non-L1–L11 list${nonStandardSkipped===1?'':'s'}.`;setStatus(msg,'warn');return;}
+    let imported=0,failed=0,occupiedSkipped=0,runtimeEmpty=0;const failures=[];
+    for(const entry of populated){const name=ceDisplayListName(entry),slot=nextImportSlot(name);if(slot<0){occupiedSkipped++;continue;}
+      try{setStatus(`Reading ${name} from TI-84 Plus CE…`);const raw=await transport.getList(entry),values=parseCeListPayload(raw);if(!values.length){runtimeEmpty++;continue;}
+        Object.assign(columns[slot],{name,tiName:name,values,loaded:true,sourceFormat:'Plus CE USB',sourceFile:`TI-84 Plus CE:${name}`});ensureVisibleColumns(slot+1);imported++;
+      }catch(err){failed++;failures.push(`${name}: ${err.message}`);}}
+    renderAll();let msg=`Imported ${imported} Plus CE list${imported===1?'':'s'} directly from the calculator.`;
+    const totalEmpty=emptySkipped+runtimeEmpty;if(totalEmpty)msg+=` Skipped ${totalEmpty} empty L1–L11 list${totalEmpty===1?'':'s'}.`;if(nonStandardSkipped)msg+=` Ignored ${nonStandardSkipped} non-L1–L11 list${nonStandardSkipped===1?'':'s'}.`;
+    if(occupiedSkipped)msg+=` ${occupiedSkipped} populated standard list${occupiedSkipped===1?' was':'s were'} skipped because all ${MAX_COLUMNS} editor slots were occupied.`;if(failed)msg+=` ${failed} failed: ${failures.join(' ')}`;setStatus(msg,failed?'warn':'good');
+  }catch(err){ceWarn('Plus CE import exception',err);if(err?.name==='NotFoundError')setStatus('Plus CE connection canceled.','warn');else if(err?.name==='SecurityError')setStatus(`Browser security blocked Plus CE access: ${err.message} Use HTTPS or localhost in a supported desktop Chromium browser.`,'bad');else setStatus(`Plus CE import failed: ${err.message} See the browser console for diagnostics.`,'bad');}
+  finally{try{await transport?.close();}catch{}}
+}
+
+// ---------- direct TI-84 Plus CE hardware send ----------
+// Scan destination first. Never send to an existing populated list without
+// asking, and pre-encode ALL selected lists before opening a USB connection.
+let ceSendBusy=false;
+async function sendColumnsToPlusCe(indices){
+  if(ceSendBusy){setStatus('A Plus CE send operation is already in progress.','warn');return;}
+  const chosen=indices.filter(i=>Number.isInteger(i)&&i>=0&&i<MAX_COLUMNS&&columns[i].values.length>0);
+  if(!chosen.length){setStatus('There are no populated editor lists to send to the Plus CE.','warn');return;}
+  const prepared=[];
+  try{
+    for(const i of chosen){
+      const values=collectValues(columns[i]);
+      // Validate every number and the device element limit before connecting.
+      ceMakeListPayload(values);
+      prepared.push({index:i,values,target:`L${i+1}`});
+    }
+  }catch(err){setStatus(`Plus CE send not started: ${err.message}`,'bad');return;}
+  ceSendBusy=true;
+  let transport=null;
+  try{
+    setStatus('Select your TI-84 Plus CE in the WebUSB device chooser…');
+    transport=await PlusCeWebUsbTransport.connect();
+    setStatus('Connected to Plus CE; reading its directory to check destination lists…');
+    await transport.ping();
+    const directory=await transport.directory();
+    const work=prepared.map(item=>{
+      const original=directory.find(entry=>ceVarTypeId(entry)===1 && ceStandardListNumber(entry.name)===item.index+1);
+      const destName=ceTargetName(item.index,directory);
+      const size=original?ceAttrUInt(original,CE_AID_VAR_SIZE):null;
+      return {...item,destName,exists:!!original,overwrite:!!original&&(size===null||size>2),size,archived:original?!!ceAttrUInt(original,CE_AID_ARCHIVED):false};
+    });
+    ceDebug('Plus CE send plan',work.map(w=>({sourceColumn:w.index+1,destination:w.destName,values:w.values.length,existingSize:w.size,overwrite:w.overwrite,archived:w.archived})));
+    const occupied=work.filter(w=>w.overwrite);
+    if(occupied.length){
+      const text=occupied.length===1
+        ? `Confirm Overwrite Plus CE ${occupied[0].target}?`
+        : `Confirm Overwrite Plus CE ${occupied.map(w=>w.target).join(', ')}?`;
+      if(!(await confirmClearLists(text))){
+        setStatus('Plus CE send canceled; no list data was changed.','warn');return;
+      }
+    }
+    let sent=0;const errors=[];
+    for(const item of work){
+      try{
+        setStatus(`Sending editor List ${item.index+1} to Plus CE ${item.target} (${item.values.length} values)…`);
+        await transport.sendList(item.destName,item.values,{archived:item.archived});
+        sent++;
+      }catch(err){
+        errors.push(`${item.target}: ${err.message}`);
+        ceWarn('Plus CE send failed',{target:item.target,error:err});
+        // After a failed write/ACK, protocol state is unknown: stop, do NOT
+        // blindly send later lists over the same USB connection.
+        break;
+      }
+    }
+    let result=`Sent ${sent} of ${work.length} list${work.length===1?'':'s'} to TI-84 Plus CE via WebUSB.`;
+    if(errors.length)result+=` Stopped at ${errors.join('; ')}. Check the calculator and browser console before retrying.`;
+    setStatus(result,errors.length?'bad':'good');
+  }catch(err){
+    ceWarn('Plus CE send exception',err);
+    if(err?.name==='NotFoundError')setStatus('Plus CE connection canceled.','warn');
+    else setStatus(`Plus CE send failed: ${err.message}. See the console for details.`,'bad');
+  }finally{
+    try{await transport?.close();}catch(err){ceWarn('Plus CE send cleanup failed',err);}
+    ceSendBusy=false;
+  }
+}
+async function sendColumnToPlusCe(index){
+  return sendColumnsToPlusCe([index]);
+}
+async function sendAllListsToPlusCe(){
+  return sendColumnsToPlusCe(columns.map((_,i)=>i));
+}
+
+// ---------- direct TI-84 Evo hardware import ----------
+// The Evo exposes the transfer protocol as Kermit over its USB CDC link.
+// Resource paths and packet behavior follow the publicly documented/open
+// implementations in Evo-Programming/evo_usb_py and the tilibs ecosystem.
+// This app uses directory/variable GET requests and list-variable PUT requests.
+// Write support is deliberately limited to standard lists L1-L6.
+const EVO_USB_VENDOR_ID = 0x0451;
+const EVO_USB_PRODUCT_ID = 0xe018;
+const EVO_LINK_TIMEOUT = 8000;
+const EVO_USB_DEBUG=true;
+const EVO_USB_TRACE_BYTES=true;
+let EVO_USB_TRANSPORT_SEQ=0, EVO_USB_TRANSACTION_SEQ=0;
+// Single-line, copy/paste-friendly trace messages rather than collapsed Object/Array UI.
+let EVO_LOG_LINE=0;
+function evoLogValue(value){
+  if(value instanceof Error)return JSON.stringify({name:value.name,message:value.message,stack:value.stack});
+  if(typeof value==='object'&&value!==null){
+    try{return JSON.stringify(value,(key,v)=>{
+      if(v instanceof Error)return {name:v.name,message:v.message,stack:v.stack};
+      if(v instanceof Uint8Array)return Array.from(v);
+      return v;
+    });}catch{return String(value);}
+  }
+  return String(value);
+}
+function evoLog(level,...args){
+  if(!EVO_USB_DEBUG)return;
+  const body=args.map(evoLogValue).join(' ');
+  const stamp=new Date().toISOString();
+  const tag=`[TI-84 Evo USB] #${++EVO_LOG_LINE} ${stamp}`;
+  (console[level]||console.log)(tag,body);
+}
+function evoUsbDebug(...args){evoLog('log',...args);}
+function evoUsbWarn(...args){evoLog('warn',...args);}
+function evoUsbError(...args){evoLog('error',...args);}
+function evoHex(data,max=192){
+  const a=data instanceof Uint8Array?data:new Uint8Array(data||[]),shown=a.slice(0,max);
+  const text=Array.from(shown,b=>b.toString(16).padStart(2,'0')).join(' ');
+  return text+(a.length>max?` … (${a.length} bytes total)`:` (${a.length} bytes)`);
+}
+function evoTrace(label,details={}){evoLog('log',label,details);}
+const EVO_SOH = 0x01, EVO_CR = 0x0d, EVO_QCTL = 0x23, EVO_REPT = 0x7e;
+const EVO_S_INIT = Uint8Array.from([0x7e,0x30,0x20,0x40,0x2d,0x23,0x59,0x31,0x7e,0x2e,0x22,0x35,0x4d]);
+
+function evoToChar(x){ return (x + 0x20) & 0xff; }
+function evoUnchar(x){ return x - 0x20; }
+function evoCtl(x){ return x ^ 0x40; }
+function bytesEqual(a,b){
+  if(a.length!==b.length)return false;
+  for(let i=0;i<a.length;i++)if(a[i]!==b[i])return false;
+  return true;
+}
+function appendBytes(a,b){
+  const out=new Uint8Array(a.length+b.length);out.set(a,0);out.set(b,a.length);return out;
+}
+function withTimeout(promise,ms,label='Evo link operation'){
+  let timer;
+  return Promise.race([
+    promise.finally(()=>clearTimeout(timer)),
+    new Promise((_,reject)=>{timer=setTimeout(()=>reject(new Error(`${label} timed out.`)),ms);})
+  ]);
+}
+// WebUSB transferOut() also has no AbortSignal. Promise.race alone does not
+// cancel an in-flight write. Close the USB device before permitting a reconnect.
+function usbTransferOutAbortable(device,endpoint,data,ms,label,logger=console.warn){
+  return new Promise((resolve,reject)=>{
+    let settled=false;
+    const timer=setTimeout(async()=>{
+      if(settled)return;settled=true;
+      try{logger(`${label} timed out; closing USBDevice to abort the pending transferOut().`);}catch{}
+      try{if(device?.opened)await device.close();}catch(err){try{logger(`${label}: close-to-abort failed`,err);}catch{}}
+      reject(new Error(`${label} timed out.`));
+    },ms);
+    device.transferOut(endpoint,data).then(result=>{
+      if(settled)return;settled=true;clearTimeout(timer);resolve(result);
+    },err=>{
+      if(settled)return;settled=true;clearTimeout(timer);reject(err);
+    });
+  });
+}
+// WebUSB transferIn() has no AbortSignal. A plain Promise.race timeout leaves the
+// underlying USB read pending. Close the device on timeout so Chromium cancels
+// the transfer before any retry/reconnect is attempted.
+function usbTransferInAbortable(device,endpoint,length,ms,label,logger=console.warn){
+  return new Promise((resolve,reject)=>{
+    let settled=false;
+    const timer=setTimeout(async()=>{
+      if(settled)return; settled=true;
+      try{logger(`${label} timed out; closing the USBDevice to abort the pending transferIn().`);}catch{}
+      try{if(device?.opened)await device.close();}catch(err){try{logger(`${label}: close-to-abort failed`,err);}catch{}}
+      reject(new Error(`${label} timed out.`));
+    },ms);
+    device.transferIn(endpoint,length).then(result=>{
+      if(settled)return;settled=true;clearTimeout(timer);resolve(result);
+    },err=>{
+      if(settled)return;settled=true;clearTimeout(timer);reject(err);
+    });
+  });
+}
+const USB_CLEANUP_TIMEOUT=3000;
+const activeWebUsbTransports=new Set();
+function usbDelay(ms){return new Promise(resolve=>setTimeout(resolve,ms));}
+function usbClaimedInterfaces(device){
+  const out=[];
+  for(const iface of device?.configuration?.interfaces||[])if(iface.claimed)out.push(iface.interfaceNumber);
+  return out;
+}
+async function usbReleaseAndClose(device,label,logger=console.log,preferredInterfaces=[]){
+  if(!device)return;
+  const log=(...args)=>{try{logger(...args);}catch{}};
+  if(!device.opened){log('USB device already closed.');return;}
+  const claimed=usbClaimedInterfaces(device);
+  const order=[];
+  for(const n of [...preferredInterfaces,...claimed])if(Number.isInteger(n)&&!order.includes(n))order.push(n);
+  log('Beginning USB cleanup',{opened:device.opened,claimedInterfaces:claimed,releaseOrder:order});
+  let cleanupError=false;
+  for(const n of order){
+    const iface=(device.configuration?.interfaces||[]).find(x=>x.interfaceNumber===n);
+    if(iface && !iface.claimed)continue;
+    try{
+      await withTimeout(device.releaseInterface(n),USB_CLEANUP_TIMEOUT,`${label} release interface ${n}`);
+      log(`Released interface ${n}.`);
+    }catch(err){cleanupError=true;log(`Could not release interface ${n}:`,err);}
+  }
+  try{
+    if(device.opened)await withTimeout(device.close(),USB_CLEANUP_TIMEOUT,`${label} close device`);
+    log('USB device close requested',{openedAfterClose:device.opened});
+  }catch(err){cleanupError=true;log('USB close failed:',err);}
+
+  // A failed release/close can leave Chromium holding the interface until another
+  // WebUSB client resets it. Use a USB port reset only as a recovery path.
+  if(device.opened||cleanupError){
+    try{
+      if(device.opened&&typeof device.reset==='function'){
+        log('Attempting USB reset to recover a stale interface.');
+        await withTimeout(device.reset(),USB_CLEANUP_TIMEOUT,`${label} USB reset`);
+        await usbDelay(40);
+      }
+    }catch(err){log('USB reset recovery failed:',err);}
+    for(const iface of device.configuration?.interfaces||[]){
+      if(!iface.claimed)continue;
+      try{await withTimeout(device.releaseInterface(iface.interfaceNumber),USB_CLEANUP_TIMEOUT,`${label} recovery release ${iface.interfaceNumber}`);}
+      catch(err){log(`Recovery release failed for interface ${iface.interfaceNumber}:`,err);}
+    }
+    try{if(device.opened)await withTimeout(device.close(),USB_CLEANUP_TIMEOUT,`${label} recovery close`);}catch(err){log('Recovery close failed:',err);}
+  }
+  await usbDelay(50);
+  log('USB cleanup complete',{opened:device.opened,claimedInterfaces:usbClaimedInterfaces(device)});
+}
+async function usbRecoverPreviouslyOpenedDevice(vendorId,productId,label,logger=console.warn){
+  if(!navigator.usb?.getDevices)return;
+  try{
+    const known=await navigator.usb.getDevices();
+    for(const device of known){
+      if(device.vendorId!==vendorId||device.productId!==productId||!device.opened)continue;
+      try{logger(`[${label}] Found a previously-opened authorized device; cleaning it up before reconnecting.`);}catch{}
+      await usbReleaseAndClose(device,label,logger);
+    }
+  }catch(err){try{logger(`[${label}] Could not inspect previously authorized USB devices:`,err);}catch{}}
+}
+window.addEventListener('pagehide',()=>{
+  for(const transport of Array.from(activeWebUsbTransports)){
+    try{void transport.close();}catch{}
+  }
+});
+function evoEncodeByte(b){
+  if(((b&0x7f)<0x20)||((b&0x7f)===0x7f))return Uint8Array.from([EVO_QCTL,evoCtl(b)]);
+  if(b===EVO_QCTL)return Uint8Array.from([EVO_QCTL,EVO_QCTL]);
+  if(b===EVO_REPT)return Uint8Array.from([EVO_QCTL,EVO_REPT]);
+  return Uint8Array.from([b]);
+}
+function evoKermitEncode(data){
+  const out=[];let i=0;
+  while(i<data.length){
+    let run=1;while(i+run<data.length&&data[i+run]===data[i]&&run<94)run++;
+    const enc=Array.from(evoEncodeByte(data[i]));
+    if(run>=3)out.push(EVO_REPT,evoToChar(run),...enc);
+    else for(let n=0;n<run;n++)out.push(...enc);
+    i+=run;
+  }
+  return Uint8Array.from(out);
+}
+function evoUnctl(b){ return (((b&0x7f)===0x3f)||((b&0x60)===0x40)) ? (b^0x40) : b; }
+function evoDecodeByte(data,i,controlQuote=EVO_QCTL){
+  if(data[i]===controlQuote&&i+1<data.length)return [evoUnctl(data[i+1]),2];
+  return [data[i],1];
+}
+function evoKermitDecode(data,session=null){
+  const controlQuote=session?.controlQuote??EVO_QCTL;
+  const binaryQuote=session?.binaryQuote??null;
+  const repeatQuote=session?.repeatQuote??EVO_REPT;
+  const out=[];let i=0;
+  while(i<data.length){
+    let count=1;
+    if(data[i]===repeatQuote&&i+2<data.length){count=evoUnchar(data[i+1]);i+=2;}
+    let highBit=0;
+    if(binaryQuote!==null&&i<data.length&&data[i]===binaryQuote){highBit=0x80;i++;}
+    if(i>=data.length)break;
+    const [b,skip]=evoDecodeByte(data,i,controlQuote);i+=skip;
+    for(let n=0;n<count;n++)out.push(b|highBit);
+  }
+  return Uint8Array.from(out);
+}
+function evoKermitChecksum1(data){
+  let sum=0;for(const b of data)sum=(sum+b)&0xffff;
+  return evoToChar((sum+((sum>>>6)&3))&0x3f);
+}
+function evoKermitChecksum2(data){
+  let sum=0;for(const b of data)sum=(sum+b)&0xffff;
+  return Uint8Array.from([evoToChar((sum>>>6)&0x3f),evoToChar(sum&0x3f)]);
+}
+function evoCrc16Kermit(data){
+  let crc=0;
+  for(const b of data){
+    let q=(crc^b)&0x0f;crc=((crc>>>4)^(q*0x1081))&0xffff;
+    q=(crc^(b>>>4))&0x0f;crc=((crc>>>4)^(q*0x1081))&0xffff;
+  }
+  return crc&0xffff;
+}
+function evoKermitChecksum3(data){
+  const crc=evoCrc16Kermit(data);
+  return Uint8Array.from([evoToChar((crc>>>12)&0x0f),evoToChar((crc>>>6)&0x3f),evoToChar(crc&0x3f)]);
+}
+function evoBlockCheck(data,type=1){
+  if(type===1)return Uint8Array.from([evoKermitChecksum1(data)]);
+  if(type===2)return evoKermitChecksum2(data);
+  if(type===3)return evoKermitChecksum3(data);
+  throw new Error(`Unsupported Kermit check type ${type}.`);
+}
+class EvoKermitSession{
+  constructor(){this.checkType=1;this.controlQuote=EVO_QCTL;this.binaryQuote=null;this.repeatQuote=EVO_REPT;this.maxPacketLen=2040;}
+  updateFromSendInit(data){
+    if(data.length>5&&data[5]!==0x20)this.controlQuote=data[5];
+    if(data.length>6&&![0x59,0x4e,0x20].includes(data[6]))this.binaryQuote=data[6];
+    if(data.length>7&&[0x31,0x32,0x33].includes(data[7]))this.checkType=data[7]-0x30;
+    if(data.length>8&&data[8]!==0x20)this.repeatQuote=data[8];
+    if(data.length>12){const maxlx=evoUnchar(data[11])*95+evoUnchar(data[12]);if(maxlx>=60)this.maxPacketLen=Math.min(maxlx,2040);}
+  }
+}
+function evoMakePacket(seq,pktType,data=new Uint8Array(0),session=null,checkType=null){
+  const d=data instanceof Uint8Array?data:Uint8Array.from(data);
+  const ct=checkType??session?.checkType??1;
+  const s=evoToChar(seq%64),t=typeof pktType==='string'?pktType.charCodeAt(0):pktType;
+  const n=d.length+2+ct;
+  if(n<=94){
+    const body=Uint8Array.from([evoToChar(n),s,t,...d]);
+    return Uint8Array.from([EVO_SOH,...body,...evoBlockCheck(body,ct),EVO_CR]);
+  }
+  const dlen=d.length+ct;
+  const hdr=Uint8Array.from([evoToChar(0),s,t,evoToChar(Math.floor(dlen/95)),evoToChar(dlen%95)]);
+  const body=Uint8Array.from([...hdr,...evoBlockCheck(hdr,1),...d]);
+  return Uint8Array.from([EVO_SOH,...body,...evoBlockCheck(body,ct),EVO_CR]);
+}
+function evoParsePacket(raw,session=null,checkType=null){
+  const ct=checkType??session?.checkType??1;
+  if(raw.length<4||raw[0]!==EVO_SOH||raw[raw.length-1]!==EVO_CR){
+    evoUsbError('Malformed Kermit packet received',{checkType:ct,raw:evoHex(raw)});
+    throw new Error('Malformed Kermit packet.');
+  }
+  const body=raw.slice(1,-1),ext=body[0]===evoToChar(0);
+  if(body.length<3+ct)throw new Error('Short Kermit packet.');
+  let checked,check,data;
+  if(ext){
+    if(body.length<6+ct)throw new Error('Short extended Kermit packet.');
+    if(body[5]!==evoKermitChecksum1(body.slice(0,5)))throw new Error('Bad extended Kermit header checksum.');
+    checked=body.slice(0,-ct);check=body.slice(-ct);data=body.slice(6,-ct);
+  }else{
+    checked=body.slice(0,-ct);check=body.slice(-ct);data=body.slice(3,-ct);
+  }
+  if(!bytesEqual(check,evoBlockCheck(checked,ct)))throw new Error('Bad Kermit packet checksum.');
+  return {seq:evoUnchar(body[1]),type:String.fromCharCode(body[2]),data};
+}
+function evoFileAttr(tag,value=''){
+  const v=typeof value==='string'?te.encode(value):value;
+  return Uint8Array.from([tag.charCodeAt(0),evoToChar(v.length),...v]);
+}
+function evoRequestAttrs(){return concatBytes(evoFileAttr('\"','B8'),evoFileAttr('1','1'),evoFileAttr('@'));}
+function evoWriteAttrs(payloadLength){return concatBytes(evoFileAttr('\"','B8'),evoFileAttr('1',String(payloadLength)),evoFileAttr('@'));}
+function evoKermitDataChunkSize(session){return Math.max(1,Math.min(2000,session.maxPacketLen-session.checkType-8));}
+function evoSplitElementAligned(wire,chunkSize=2000){
+  const chunks=[];let pos=0,start=0;
+  while(pos<wire.length){
+    if(wire[pos]===EVO_REPT&&pos+2<wire.length){
+      pos+=2;
+      if(wire[pos]===EVO_QCTL&&pos+1<wire.length)pos+=2;else pos+=1;
+    }else if(wire[pos]===EVO_QCTL&&pos+1<wire.length)pos+=2;
+    else pos+=1;
+    if(pos-start>=chunkSize){chunks.push(wire.slice(start,pos));start=pos;}
+  }
+  if(start<wire.length)chunks.push(wire.slice(start));
+  return chunks;
+}
+function evoTransferErrorText(data){
+  try{const text=td.decode(data).trim();return text||Array.from(data,b=>b.toString(16).padStart(2,'0')).join(' ');}catch{return 'calculator transfer error';}
+}
+async function evoSendPacket(transport,seq,type,data=new Uint8Array(0),session=null,timeout=EVO_LINK_TIMEOUT){
+  const pkt=evoMakePacket(seq,type,data,session);
+  for(let attempt=0;attempt<3;attempt++){
+    evoTrace(`T${transport.traceId||'?'} Kermit TX`,{seq:seq%64,type,attempt:attempt+1,dataBytes:data.length,packetBytes:pkt.length,checkType:session?.checkType??1,hex:EVO_USB_TRACE_BYTES?evoHex(pkt):undefined});
+    await transport.write(pkt,timeout);
+    const raw=await transport.readPacket(timeout);
+    evoTrace(`T${transport.traceId||'?'} Kermit RX raw`,{expectedAckFor:type,bytes:raw.length,hex:EVO_USB_TRACE_BYTES?evoHex(raw):undefined});
+    const reply=evoParsePacket(raw,session);
+    evoTrace(`T${transport.traceId||'?'} Kermit RX`,{seq:reply.seq,type:reply.type,dataBytes:reply.data.length,checkType:session?.checkType??1});
+    if(reply.type==='Y'){
+      if(type==='S'&&session){session.updateFromSendInit(reply.data);evoTrace(`T${transport.traceId||'?'} Kermit negotiated`,{checkType:session.checkType,controlQuote:session.controlQuote,binaryQuote:session.binaryQuote,repeatQuote:session.repeatQuote,maxPacketLen:session.maxPacketLen});}
+      return reply.data;
+    }
+    if(reply.type==='E')throw new Error(`Evo rejected packet ${type}: ${evoTransferErrorText(reply.data)}`);
+    evoUsbWarn(`Unexpected Kermit reply while waiting for ACK to ${type}`,reply);
+  }
+  throw new Error(`Evo did not acknowledge packet ${type}.`);
+}
+async function evoAck(transport,seq,data=new Uint8Array(0),session=null,timeout=EVO_LINK_TIMEOUT){
+  const pkt=evoMakePacket(seq,'Y',data,session);
+  evoTrace(`T${transport.traceId||'?'} Kermit ACK TX`,{seq:seq%64,dataBytes:data.length,packetBytes:pkt.length,hex:EVO_USB_TRACE_BYTES?evoHex(pkt):undefined});
+  await transport.write(pkt,timeout);
+}
+async function evoGetRequest(transport,url){
+  const requestId=++EVO_USB_TRANSACTION_SEQ,start=performance.now();
+  evoTrace(`GET #${requestId} begin`,{transportId:transport.traceId||null,url});
+  const session=new EvoKermitSession();let seq=0;
+  await evoSendPacket(transport,seq++,'S',EVO_S_INIT,session);
+  await evoSendPacket(transport,seq++,'F',te.encode(url),session);
+  await evoSendPacket(transport,seq++,'A',evoRequestAttrs(),session);
+  await evoSendPacket(transport,seq++,'D',Uint8Array.from([0x68]),session);
+  await evoSendPacket(transport,seq++,'Z',new Uint8Array(0),session);
+  await evoSendPacket(transport,seq++,'B',new Uint8Array(0),session);
+
+  let reply=evoParsePacket(await transport.readPacket(EVO_LINK_TIMEOUT),session);
+  if(reply.type==='E')throw new Error(`Evo request failed: ${evoTransferErrorText(reply.data)}`);
+  if(reply.type!=='S')throw new Error(`Evo protocol: expected S response, received ${reply.type}.`);
+  await evoAck(transport,reply.seq,reply.data,session);
+
+  for(const expected of ['F','A']){
+    reply=evoParsePacket(await transport.readPacket(EVO_LINK_TIMEOUT),session);
+    if(reply.type==='E')throw new Error(`Evo request failed: ${evoTransferErrorText(reply.data)}`);
+    if(reply.type!==expected)throw new Error(`Evo protocol: expected ${expected} response, received ${reply.type}.`);
+    await evoAck(transport,reply.seq,new Uint8Array(0),session);
+  }
+
+  const chunks=[];
+  while(true){
+    reply=evoParsePacket(await transport.readPacket(EVO_LINK_TIMEOUT),session);
+    if(reply.type==='E')throw new Error(`Evo request failed: ${evoTransferErrorText(reply.data)}`);
+    await evoAck(transport,reply.seq,new Uint8Array(0),session);
+    if(reply.type==='Z')break;
+    if(reply.type==='D')chunks.push(reply.data);
+  }
+  {
+    const raw=await transport.readPacket(EVO_LINK_TIMEOUT);
+    evoTrace(`GET #${requestId} final RX raw`,{bytes:raw.length,hex:EVO_USB_TRACE_BYTES?evoHex(raw):undefined});
+    reply=evoParsePacket(raw,session);
+  }
+  if(reply.type==='B')await evoAck(transport,reply.seq,new Uint8Array(0),session);
+  const decoded=evoKermitDecode(concatBytes(...chunks),session);
+  evoTrace(`GET #${requestId} complete`,{url,encodedChunks:chunks.length,decodedBytes:decoded.length,durationMs:Math.round(performance.now()-start)});
+  return decoded;
+}
+
+async function evoPutRequest(transport,url,payload){
+  const requestId=++EVO_USB_TRANSACTION_SEQ,start=performance.now();
+  evoTrace(`PUT #${requestId} begin`,{transportId:transport.traceId||null,url,payloadBytes:payload.length});
+  const session=new EvoKermitSession();let seq=0;
+  const wire=evoKermitEncode(payload);
+  await evoSendPacket(transport,seq++,'S',EVO_S_INIT,session);
+  await evoSendPacket(transport,seq++,'F',te.encode(url),session);
+  await evoSendPacket(transport,seq++,'A',evoWriteAttrs(payload.length),session);
+  const chunkSize=evoKermitDataChunkSize(session);
+  for(const chunk of evoSplitElementAligned(wire,chunkSize))await evoSendPacket(transport,seq++,'D',chunk,session);
+  await evoSendPacket(transport,seq++,'Z',new Uint8Array(0),session);
+  await evoSendPacket(transport,seq++,'B',new Uint8Array(0),session);
+  evoTrace(`PUT #${requestId} complete`,{url,payloadBytes:payload.length,encodedBytes:wire.length,durationMs:Math.round(performance.now()-start)});
+}
+
+function evoErrorCodeFromMessage(message){
+  const m=String(message||'').match(/(?:^|\b)(PM|DP)(?:\b|$)/);
+  return m?m[1]:'';
+}
+async function evoSendListFile(transport,fileBytes,existingItem=null){
+  const preferredArchive=existingItem?!!existingItem.mem:false;
+  const send=archive=>evoPutRequest(transport,`hh01/xfr/var?memtarget=${archive?1:0}&policy=1`,fileBytes);
+  try{await send(preferredArchive);return preferredArchive?'Archive':'RAM';}
+  catch(err){
+    const code=evoErrorCodeFromMessage(err?.message);
+    if(!preferredArchive&&(code==='PM'||code==='DP')){await send(true);return 'Archive';}
+    throw err;
+  }
+}
+
+class EvoWebUsbTransport{
+  constructor(device){
+    this.device=device;this.interfaceNumber=null;this.controlInterfaceNumber=null;
+    this.inEndpoint=null;this.outEndpoint=null;this.rx=new Uint8Array(0);this.traceId=++EVO_USB_TRANSPORT_SEQ;this.cdcControlClaimed=false;
+  }
+  static async chooseDevice(){
+    if(!navigator.usb)throw new Error('WebUSB is not available in this browser. Use Chrome/Edge on a secure page, or use the Web Serial button.');
+    await usbRecoverPreviouslyOpenedDevice(EVO_USB_VENDOR_ID,EVO_USB_PRODUCT_ID,'TI-84 Evo USB',evoUsbWarn);
+    evoTrace('Requesting Evo WebUSB device',{secureContext:isSecureContext,userAgent:navigator.userAgent});
+    const device=await navigator.usb.requestDevice({filters:[{vendorId:EVO_USB_VENDOR_ID,productId:EVO_USB_PRODUCT_ID}]});
+    evoTrace('Evo WebUSB device selected',{productName:device.productName,manufacturerName:device.manufacturerName,serialNumber:device.serialNumber,vendorId:`0x${device.vendorId.toString(16)}`,productId:`0x${device.productId.toString(16)}`,opened:device.opened,configurations:(device.configurations||[]).map(c=>c.configurationValue)});
+    return device;
+  }
+  static async connect(device=null){
+    if(!device)device=await EvoWebUsbTransport.chooseDevice();
+    const transport=new EvoWebUsbTransport(device);
+    try{await transport.open();activeWebUsbTransports.add(transport);return transport;}
+    catch(err){evoUsbError(`T${transport.traceId} open failed`,err);try{await transport.close();}catch{}throw err;}
+  }
+  async open(){
+    await this.device.open();
+    if(!this.device.configuration)await this.device.selectConfiguration(1);
+    evoUsbDebug(`T${this.traceId} Opened device`,{productName:this.device.productName,serialNumber:this.device.serialNumber,configuration:this.device.configuration?.configurationValue,opened:this.device.opened});
+    evoTrace(`T${this.traceId} USB interface descriptors`,(this.device.configuration?.interfaces||[]).map(iface=>({interfaceNumber:iface.interfaceNumber,claimed:iface.claimed,alternates:(iface.alternates||[]).map(alt=>({alternateSetting:alt.alternateSetting,class:alt.interfaceClass,subclass:alt.interfaceSubclass,protocol:alt.interfaceProtocol,endpoints:(alt.endpoints||[]).map(ep=>({endpointNumber:ep.endpointNumber,direction:ep.direction,type:ep.type,packetSize:ep.packetSize}))}))})));
+    const candidates=[];
+    for(const iface of this.device.configuration.interfaces){
+      for(const alt of iface.alternates){
+        const inp=alt.endpoints.find(e=>e.direction==='in'&&e.type==='bulk');
+        const out=alt.endpoints.find(e=>e.direction==='out'&&e.type==='bulk');
+        if(inp&&out){
+          let score=10;if(alt.interfaceClass===0x0a)score=100;else if(alt.interfaceClass===0xff)score=60;
+          candidates.push({iface,alt,inp,out,score});
+        }
+      }
+    }
+    candidates.sort((a,b)=>b.score-a.score);
+    let lastError=null;
+    for(const c of candidates){
+      try{
+        await this.device.claimInterface(c.iface.interfaceNumber);
+        if(c.iface.alternate.alternateSetting!==c.alt.alternateSetting)await this.device.selectAlternateInterface(c.iface.interfaceNumber,c.alt.alternateSetting);
+        this.interfaceNumber=c.iface.interfaceNumber;this.inEndpoint=c.inp.endpointNumber;this.outEndpoint=c.out.endpointNumber;
+        evoUsbDebug(`T${this.traceId} Claimed CDC data interface`,{interfaceNumber:this.interfaceNumber,class:c.alt.interfaceClass,subclass:c.alt.interfaceSubclass,inEndpoint:this.inEndpoint,outEndpoint:this.outEndpoint});
+        for(const [direction,endpoint] of [['in',this.inEndpoint],['out',this.outEndpoint]]){
+          try{await this.device.clearHalt(direction,endpoint);evoTrace(`T${this.traceId} clearHalt`,{direction,endpoint,status:'ok'});}
+          catch(err){evoUsbWarn(`T${this.traceId} clearHalt ${direction} endpoint ${endpoint} failed`,err);}
+        }
+        await this.setupCdcControlInterface();
+        return;
+      }catch(err){
+        lastError=err;evoUsbWarn('Could not claim candidate Evo data interface',c.iface.interfaceNumber,err);
+        try{if(c.iface.claimed)await this.device.releaseInterface(c.iface.interfaceNumber);}catch(releaseErr){evoUsbWarn('Candidate interface cleanup failed',releaseErr);}
+        this.interfaceNumber=null;this.inEndpoint=null;this.outEndpoint=null;
+      }
+    }
+    await this.close();
+    const detail=lastError?.message?` (${lastError.message})`:'';
+    throw new Error(`The Evo was found, but WebUSB could not claim its bulk CDC data interface${detail}. Try the Web Serial button; many systems bind the Evo CDC interface to the OS serial driver.`);
+  }
+  async setupCdcControlInterface(){
+    const controls=[];
+    for(const iface of this.device.configuration?.interfaces||[]){
+      if(iface.interfaceNumber===this.interfaceNumber)continue;
+      for(const alt of iface.alternates||[]){
+        if(alt.interfaceClass===0x02)controls.push({iface,alt});
+      }
+    }
+    for(const c of controls){
+      try{
+        await this.device.claimInterface(c.iface.interfaceNumber);
+        if(c.iface.alternate.alternateSetting!==c.alt.alternateSetting)await this.device.selectAlternateInterface(c.iface.interfaceNumber,c.alt.alternateSetting);
+        this.controlInterfaceNumber=c.iface.interfaceNumber;
+        this.cdcControlClaimed=true;
+        // Match a normal 115200 8-N-1 CDC serial open. This is the USB-level
+        // state that an OS serial driver normally establishes automatically.
+        const lineCoding=Uint8Array.from([0x00,0xc2,0x01,0x00,0x00,0x00,0x08]);
+        try{
+          const lc=await this.device.controlTransferOut({requestType:'class',recipient:'interface',request:0x20,value:0,index:this.controlInterfaceNumber},lineCoding);
+          evoUsbDebug('CDC SET_LINE_CODING',{interfaceNumber:this.controlInterfaceNumber,status:lc.status});
+        }catch(err){evoUsbWarn('CDC line-coding request was not accepted; continuing with bulk data interface.',err);}
+        try{
+          const cs=await this.device.controlTransferOut({requestType:'class',recipient:'interface',request:0x22,value:0x03,index:this.controlInterfaceNumber});
+          evoUsbDebug('CDC control lines asserted',{interfaceNumber:this.controlInterfaceNumber,status:cs.status,DTR:true,RTS:true});
+        }catch(err){evoUsbWarn('CDC control-line assertion was not accepted; continuing with bulk data interface.',err);}
+        return;
+      }catch(err){
+        evoUsbWarn('Could not claim Evo CDC control interface',c.iface.interfaceNumber,err);
+        try{if(c.iface.claimed)await this.device.releaseInterface(c.iface.interfaceNumber);}catch{}
+      }
+    }
+    evoUsbWarn(`T${this.traceId} CDC control interface unavailable (claimed by OS or another app). Raw WebUSB can write bulk packets but cannot establish the CDC serial-port DTR/RTS state. This is a likely cause of Kermit handshake timeouts. Use Web Serial if this path fails.`);
+  }
+  async write(data,timeout=EVO_LINK_TIMEOUT){
+    evoTrace(`T${this.traceId} USB bulk OUT`,{endpoint:this.outEndpoint,bytes:data.length,hex:EVO_USB_TRACE_BYTES?evoHex(data):undefined});
+    const result=await usbTransferOutAbortable(this.device,this.outEndpoint,data,timeout,'Evo WebUSB write',(...a)=>evoUsbWarn(`T${this.traceId}`,...a));
+    evoTrace(`T${this.traceId} USB bulk OUT complete`,{endpoint:this.outEndpoint,status:result.status,bytesWritten:result.bytesWritten});
+    if(result.status!=='ok')throw new Error(`Evo WebUSB write failed: ${result.status}.`);
+  }
+  async readPacket(timeout=EVO_LINK_TIMEOUT){
+    const deadline=Date.now()+timeout;
+    while(true){
+      // Resynchronize on Kermit's SOH. Stale bytes can otherwise turn an otherwise
+      // valid packet into a misleading "Malformed Kermit packet" error.
+      const soh=this.rx.indexOf(EVO_SOH);
+      if(soh>0){evoUsbWarn(`T${this.traceId} Discarding ${soh} stale byte(s) before Kermit SOH`,evoHex(this.rx.slice(0,soh)));this.rx=this.rx.slice(soh);}
+      else if(soh<0&&this.rx.length){evoUsbWarn(`T${this.traceId} No Kermit SOH in buffered bytes; discarding stale input`,evoHex(this.rx));this.rx=new Uint8Array(0);}
+      if(this.rx.length&&this.rx[0]===EVO_SOH){
+        const idx=this.rx.indexOf(EVO_CR,1);
+        if(idx>=0){const pkt=this.rx.slice(0,idx+1);this.rx=this.rx.slice(idx+1);evoTrace(`T${this.traceId} Assembled Kermit frame`,{bytes:pkt.length,remainingBuffered:this.rx.length,hex:EVO_USB_TRACE_BYTES?evoHex(pkt):undefined});return pkt;}
+      }
+      const remaining=deadline-Date.now();if(remaining<=0)throw new Error('Evo WebUSB read timed out.');
+      evoTrace(`T${this.traceId} USB bulk IN wait`,{endpoint:this.inEndpoint,remainingMs:remaining,bufferedBytes:this.rx.length});
+      const result=await usbTransferInAbortable(this.device,this.inEndpoint,4096,remaining,'Evo WebUSB read',(...a)=>evoUsbWarn(`T${this.traceId}`,...a));
+      if(result.status!=='ok'||!result.data)throw new Error(`Evo WebUSB read failed: ${result.status}.`);
+      const chunk=new Uint8Array(result.data.buffer,result.data.byteOffset,result.data.byteLength);
+      evoTrace(`T${this.traceId} USB bulk IN`,{endpoint:this.inEndpoint,status:result.status,bytes:chunk.length,hex:EVO_USB_TRACE_BYTES?evoHex(chunk):undefined});
+      if(chunk.length)this.rx=appendBytes(this.rx,new Uint8Array(chunk));
+    }
+  }
+  async close(){
+    activeWebUsbTransports.delete(this);
+    this.rx=new Uint8Array(0);
+    if(this.device?.opened&&this.controlInterfaceNumber!==null){
+      try{
+        const result=await withTimeout(this.device.controlTransferOut({requestType:'class',recipient:'interface',request:0x22,value:0x00,index:this.controlInterfaceNumber}),USB_CLEANUP_TIMEOUT,'Evo CDC control-line close');
+        evoUsbDebug(`T${this.traceId} CDC control lines cleared`,{interfaceNumber:this.controlInterfaceNumber,status:result.status,DTR:false,RTS:false});
+        await usbDelay(25);
+      }catch(err){evoUsbWarn(`T${this.traceId} Could not clear Evo CDC control lines before release:`,err);}
+    }
+    await usbReleaseAndClose(this.device,'TI-84 Evo USB',evoUsbWarn,[this.interfaceNumber,this.controlInterfaceNumber]);
+    this.interfaceNumber=null;this.controlInterfaceNumber=null;this.inEndpoint=null;this.outEndpoint=null;
+  }
+}
+// No automatic Evo USBDevice.reset(): a port reset does not release the
+// OS-owned CDC control interface and made the handshake unreliable on macOS.
+// Cleanup still has a reset recovery path if a genuine release/close fails.
+function evoWebUsbRetryableError(err){
+  const text=String(err?.message||err||'');
+  return /timed out|Malformed Kermit|Kermit packet checksum|extended Kermit|Unable to claim interface|NetworkError|transfer/i.test(text);
+}
+async function evoWebUsbTransaction(device,label,operation,{retries=1}={}){
+  const txn=++EVO_USB_TRANSACTION_SEQ;
+  for(let attempt=0;attempt<=retries;attempt++){
+    let transport=null;const started=performance.now();
+    try{
+      evoTrace(`USB transaction ${txn} begin`,{label,attempt:attempt+1,maxAttempts:retries+1,deviceOpened:device.opened,resetPolicy:'NO automatic USBDevice.reset'});
+      // Do NOT reset the Evo before ordinary GET/PUT. reset() cancels USB
+      // operations but cannot claim an OS-owned CDC control interface, and
+      // disrupts the calculator's serial link setup on affected Macs.
+      transport=await EvoWebUsbTransport.connect(device);
+      evoTrace(`USB transaction ${txn} CDC state`,{controlInterfaceClaimed:transport.cdcControlClaimed,controlInterfaceNumber:transport.controlInterfaceNumber,dataInterfaceNumber:transport.interfaceNumber});
+      const result=await operation(transport);
+      evoTrace(`USB transaction ${txn} success`,{label,attempt:attempt+1,durationMs:Math.round(performance.now()-started)});
+      return result;
+    }catch(err){
+      const missingControl=transport!==null&&!transport.cdcControlClaimed;
+      evoUsbError(`USB transaction ${txn} failed`,{label,attempt:attempt+1,message:err?.message,name:err?.name,missingCdcControl:missingControl,stack:err?.stack});
+      if(missingControl){
+        evoUsbWarn(`USB transaction ${txn}: CDC control interface 0 was not claimable; a device reset cannot fix an OS-owned interface. Not repeating a handshake that is already failing.`,{label});
+        throw new Error(`${err.message} Evo CDC control interface is unavailable to raw WebUSB on this computer. Check the USB/CDC initialization logs, reconnect the calculator if needed, and retry.`);
+      }
+      if(attempt>=retries||!evoWebUsbRetryableError(err))throw err;
+      evoUsbWarn(`USB transaction ${txn} retrying after release/close WITHOUT a device reset`,{label,attempt:attempt+2});
+    }finally{
+      if(transport){try{await transport.close();}catch(closeErr){evoUsbError(`USB transaction ${txn} close failed`,closeErr);}}
+      await usbDelay(220);
+      evoTrace(`USB transaction ${txn} closed`,{label,attempt:attempt+1,deviceOpened:device.opened,claimedInterfaces:usbClaimedInterfaces(device)});
+    }
+  }
+}
+async function evoWebUsbGet(device,url,label=url){return evoWebUsbTransaction(device,`GET ${label}`,t=>evoGetRequest(t,url),{retries:1});}
+async function evoWebUsbPut(device,url,payload,label=url){return evoWebUsbTransaction(device,`PUT ${label}`,t=>evoPutRequest(t,url,payload),{retries:1});}
+// TI Connect Evo opens the calculator's CDC serial interface at 115200 8N1
+// with a 4096-byte buffer. Physical Evo testing confirms that one open/close
+// cycle makes subsequent *raw WebUSB* Kermit transfers reliable on macOS.
+// Prime ONCE per page session before WebUSB import. Serial is used
+// only for CDC initialization, never for fetching list data.
+let evoCdcPrimedThisPage = false;
+async function initializeEvoCdcViaSerial({port:knownPort=null,allowChooser=true}={}){
+  const started=performance.now();
+  let port=knownPort,reader=null,writer=null,opened=false;
+  evoUsbDebug('Evo CDC automatic initialization begin',{
+    mode:knownPort?'previously authorized port':'Web Serial device chooser',
+    settings:{baudRate:115200,dataBits:8,stopBits:1,parity:'none',bufferSize:4096},
+    sendsCalculatorCommands:false,webSerialAvailable:!!navigator.serial
+  });
+  try{
+    if(!navigator.serial)throw new Error('Web Serial is unavailable; the Evo WebUSB import requires Chrome or Edge with Web Serial enabled.');
+    if(!port){
+      if(!allowChooser||!navigator.serial.requestPort)throw new Error('Web Serial permission is required to initialize the Evo CDC interface.');
+      evoUsbDebug('Evo CDC requesting initial Web Serial permission');
+      port=await navigator.serial.requestPort({filters:[{usbVendorId:EVO_USB_VENDOR_ID,usbProductId:EVO_USB_PRODUCT_ID}]});
+    }
+    const info=port.getInfo?.()||{};
+    evoUsbDebug('Evo CDC port selected',info);
+    if(info.usbVendorId!==EVO_USB_VENDOR_ID||info.usbProductId!==EVO_USB_PRODUCT_ID)throw new Error('The selected serial port is not a TI-84 Evo.');
+    setStatus('Initializing the Evo CDC serial connection before WebUSB import…');
+    await port.open({baudRate:115200,dataBits:8,stopBits:1,parity:'none',bufferSize:4096});
+    opened=true;
+    evoUsbDebug('Evo CDC port opened',{readable:!!port.readable,writable:!!port.writable});
+    if(!port.readable||!port.writable)throw new Error('Evo serial port opened without readable and writable streams.');
+    reader=port.readable.getReader();writer=port.writable.getWriter();
+    evoTrace('Evo CDC reader and writer acquired',{readableLocked:port.readable.locked,writableLocked:port.writable.locked});
+    // Do not send data or Kermit packets. Acquiring and releasing the serial
+    // handles is the only operation necessary to initialize this CDC device.
+    reader.releaseLock();reader=null;
+    writer.releaseLock();writer=null;
+    evoTrace('Evo CDC serial stream locks released');
+    await port.close();opened=false;
+    evoCdcPrimedThisPage=true;
+    evoUsbDebug('Evo CDC automatic initialization complete',{durationMs:Math.round(performance.now()-started),portClosed:true});
+    return true;
+  }catch(err){
+    evoUsbError('Evo CDC automatic initialization failed',{message:err?.message,name:err?.name,opened});
+    throw err;
+  }finally{
+    if(reader)try{reader.releaseLock();}catch(err){evoUsbWarn('Evo CDC reader lock release failed',err);}
+    if(writer)try{writer.releaseLock();}catch(err){evoUsbWarn('Evo CDC writer lock release failed',err);}
+    if(opened&&port)try{await port.close();evoTrace('Evo CDC emergency serial port close complete');}
+    catch(err){evoUsbError('Evo CDC emergency serial port close failed',err);}
+  }
+}
+
+async function evoAuthorizedSerialPort(){
+  if(!navigator.serial?.getPorts)return null;
+  const ports=await navigator.serial.getPorts();
+  evoTrace('Checking Evo serial permissions',{authorizedPorts:ports.map(p=>p.getInfo?.()||{})});
+  return ports.find(p=>{
+    const info=p.getInfo?.()||{};
+    return info.usbVendorId===EVO_USB_VENDOR_ID&&info.usbProductId===EVO_USB_PRODUCT_ID;
+  })||null;
+}
+async function evoAuthorizedWebUsbDevice(){
+  if(!navigator.usb?.getDevices)return null;
+  const devices=(await navigator.usb.getDevices()).filter(d=>d.vendorId===EVO_USB_VENDOR_ID&&d.productId===EVO_USB_PRODUCT_ID);
+  evoTrace('Checking Evo WebUSB permissions',{authorizedDevices:devices.map(d=>({productName:d.productName,serialNumber:d.serialNumber,opened:d.opened}))});
+  // If more than one Evo is authorized, let the browser's chooser decide.
+  return devices.length===1?devices[0]:null;
+}
+
+// Called ONLY for raw WebUSB import, inside the button's click handler.
+// Reuse existing browser permissions whenever possible. On a fresh browser
+// profile two chooser prompts may not be permitted from a single click;
+// preserve the CDC initialization and request a second click if necessary.
+async function prepareEvoWebUsbImport(){
+  if(!navigator.usb)throw new Error('WebUSB is unavailable. Use Chrome or Edge on localhost or HTTPS.');
+  if(evoCdcPrimedThisPage){
+    evoTrace('Skipping Evo CDC init; already initialized this page session');
+    const authorized=await evoAuthorizedWebUsbDevice();
+    if(authorized){
+      await usbRecoverPreviouslyOpenedDevice(EVO_USB_VENDOR_ID,EVO_USB_PRODUCT_ID,'TI-84 Evo USB',evoUsbWarn);
+      evoTrace('Reusing authorized Evo WebUSB device');
+      return authorized;
+    }
+    return EvoWebUsbTransport.chooseDevice();
+  }
+  const [usbDevice,serialPort]=await Promise.all([evoAuthorizedWebUsbDevice(),evoAuthorizedSerialPort()]);
+  if(usbDevice){
+    // USB is already authorized: initialize serial first, then reuse this
+    // USBDevice without another browser prompt.
+    evoTrace('Evo startup: WebUSB already authorized; priming CDC first',{serialAlreadyAuthorized:!!serialPort});
+    await initializeEvoCdcViaSerial({port:serialPort});
+    await usbRecoverPreviouslyOpenedDevice(EVO_USB_VENDOR_ID,EVO_USB_PRODUCT_ID,'TI-84 Evo USB',evoUsbWarn);
+    return usbDevice;
+  }
+  if(serialPort){
+    // USB needs a chooser: obtain WebUSB permission under the original click
+    // before awaiting the (already-authorized) serial open/close.
+    evoTrace('Evo startup: serial authorized; requesting WebUSB permission before CDC open');
+    const device=await EvoWebUsbTransport.chooseDevice();
+    await initializeEvoCdcViaSerial({port:serialPort});
+    return device;
+  }
+  evoTrace('Evo startup: no serial or WebUSB permissions; requesting CDC permission first');
+  await initializeEvoCdcViaSerial();
+  // A second device chooser may require a second user gesture. The user can
+  // click Import again; the session stays initialized and next call starts
+  // directly with the WebUSB chooser.
+  try{return await EvoWebUsbTransport.chooseDevice();}
+  catch(err){
+    if(err?.name==='SecurityError'||err?.name==='NotAllowedError'){
+      const retry=new Error('Evo CDC initialization succeeded. Chrome needs another click to authorize WebUSB. Click “Get Evo Device Lists — WebUSB” again.');
+      retry.name='PermissionRetryRequired';throw retry;
+    }
+    throw err;
+  }
+}
+
+function parseCborDocument(bytes){
+  const state={o:0};const root=cborParse(bytes,state);
+  if(state.o!==bytes.length)throw new Error('Unexpected trailing data in Evo CBOR response.');
+  return root;
+}
+function evoDirectoryListName(item){
+  const tok=item?.tokName;
+  if(tok instanceof Uint8Array)return decodeEvoName(tok);
+  const disp=item?.dispName;
+  if(typeof disp==='string'&&disp.trim())return disp.trim();
+  return 'List';
+}
+function evoUrlEncodeTokenName(nameBytes){
+  let out='';
+  for(let i=0;i+1<nameBytes.length;i+=2){
+    const word=nameBytes[i]|(nameBytes[i+1]<<8);if(word===0)break;
+    const utf8=te.encode(String.fromCodePoint(word));
+    for(const b of utf8)out+=`%${b.toString(16).toUpperCase().padStart(2,'0')}`;
+  }
+  return out;
+}
+function evoVariableResource(item){
+  if(!(item?.tokName instanceof Uint8Array))throw new Error('Evo directory entry has no tokenized variable name.');
+  return `var?name=${evoUrlEncodeTokenName(item.tokName)}&type=${Number(item.type)||0}`;
+}
+function addEvoFileChecksum(body){
+  const checksum=evoChecksum(body),out=new Uint8Array(body.length+2);out.set(body,0);out[body.length]=(checksum>>>8)&255;out[body.length+1]=checksum&255;return out;
+}
+function nextImportSlot(tiName){
+  const m=String(tiName||'').match(/^L((?:[1-9]|1[0-2]))$/i);
+  if(m){const wanted=Number(m[1])-1;if(!columns[wanted].loaded&&columns[wanted].values.length===0)return wanted;}
+  return columns.findIndex(c=>!c.loaded&&c.values.length===0);
+}
+function evoListSortKey(item){
+  const name=evoDirectoryListName(item),m=name.match(/^L([1-6])$/i);
+  return m?Number(m[1]):100;
+}
+function evoStandardListNumber(item){
+  const m=evoDirectoryListName(item).match(/^L([1-6])$/i);
+  return m?Number(m[1]):null;
+}
+function evoDirectoryListIsEmpty(item){
+  // An unpopulated Evo standard list is reported as 4 bytes (L5/L6 on the
+  // tested firmware), while populated lists have larger sizes. Some firmware
+  // versions may report size 0. An explicit element count takes precedence.
+  for(const key of ['len','length','count','elements']){
+    if(item?.[key]!==undefined&&item?.[key]!==null){
+      const n=Number(item[key]);
+      if(Number.isFinite(n))return n===0;
+    }
+  }
+  const size=Number(item?.size);
+  return Number.isFinite(size)&&(size===0||size===4);
+}
+function evoDirectoryStandardListMap(directory){
+  const map=new Map();
+  const entries=Array.isArray(directory?.data)?directory.data:[];
+  for(const item of entries){
+    if(Number(item?.type)!==1)continue;
+    const n=evoStandardListNumber(item);
+    if(n!==null)map.set(n,item);
+  }
+  return map;
+}
+async function readEvoDirectory(transport){
+  const raw=await evoGetRequest(transport,'hh01/get/hh01/inf/res?name=directory&gotohome=1');
+  const parsed=parseCborDocument(raw);
+  evoTrace('Evo directory decoded',{entries:Array.isArray(parsed?.data)?parsed.data.length:0,lists:(Array.isArray(parsed?.data)?parsed.data:[]).filter(x=>Number(x?.type)===1).map(x=>({name:evoDirectoryListName(x),size:x?.size,len:x?.len,mem:x?.mem,type:x?.type}))});
+  return parsed;
+}
+async function readEvoDirectoryWebUsb(device){
+  const raw=await evoWebUsbGet(device,'hh01/get/hh01/inf/res?name=directory&gotohome=1','directory');
+  const parsed=parseCborDocument(raw);
+  evoTrace('Evo directory decoded',{entries:Array.isArray(parsed?.data)?parsed.data.length:0,lists:(Array.isArray(parsed?.data)?parsed.data:[]).filter(x=>Number(x?.type)===1).map(x=>({name:evoDirectoryListName(x),size:x?.size,len:x?.len,mem:x?.mem,type:x?.type}))});
+  return parsed;
+}
+async function sendColumnToEvo(index){
+  if(index<0||index>=6)return;
+  const targetName=`L${index+1}`;
+  let values;
+  try{values=collectValues(columns[index]);}
+  catch(err){setStatus(err.message,'bad');return;}
+  if(!values.length){setStatus(`List ${index+1} has no values to send to ${targetName}.`,'warn');return;}
+  let device=null;
+  try{
+    setStatus(`Select your TI-84 Evo to send List ${index+1} as ${targetName}…`);
+    device=await EvoWebUsbTransport.chooseDevice();
+    setStatus(`Connected to TI-84 Evo. Checking ${targetName} before sending…`);
+    const directory=await readEvoDirectoryWebUsb(device),map=evoDirectoryStandardListMap(directory),existing=map.get(index+1)||null;
+    if(existing&&!evoDirectoryListIsEmpty(existing)){
+      if(!(await confirmClearLists(`${targetName} already contains data on the Evo. Overwrite ${targetName}?`))){setStatus(`Send to ${targetName} canceled.`,'warn');return;}
+    }
+    const file=make8xl2(values,targetName),preferredArchive=existing?!!existing.mem:false;
+    setStatus(`Sending ${targetName} to TI-84 Evo…`);
+    let location=preferredArchive?'Archive':'RAM';
+    try{await evoWebUsbPut(device,`hh01/xfr/var?memtarget=${preferredArchive?1:0}&policy=1`,file,targetName);}
+    catch(err){const code=evoErrorCodeFromMessage(err?.message);if(!preferredArchive&&(code==='PM'||code==='DP')){await evoWebUsbPut(device,'hh01/xfr/var?memtarget=1&policy=1',file,`${targetName} Archive retry`);location='Archive';}else throw err;}
+    setStatus(`Sent List ${index+1} to the Evo as ${targetName} (${values.length} value${values.length===1?'':'s'}, ${location}).`,'good');
+  }catch(err){
+    evoUsbError('Single-list Evo send failed',err);
+    if(err?.name==='PermissionRetryRequired')setStatus(err.message,'warn');
+    else if(err?.name==='NotFoundError')setStatus('Evo connection canceled.','warn');
+    else if(err?.name==='SecurityError')setStatus(`Browser security blocked calculator access: ${err.message} Use HTTPS or localhost in a supported desktop browser.`,'bad');
+    else setStatus(`Evo send failed: ${err.message}`,'bad');
+  }finally{
+    if(device?.opened)try{await usbReleaseAndClose(device,'TI-84 Evo USB final',evoUsbWarn);}catch{}
+  }
+}
+async function sendL1ToL6ToEvo(){
+  const outgoing=[];
+  try{for(let i=0;i<6;i++){if(!columns[i].values.length)continue;outgoing.push({index:i,name:`L${i+1}`,values:collectValues(columns[i])});}}
+  catch(err){setStatus(err.message,'bad');return;}
+  if(!outgoing.length){setStatus('Lists 1–6 contain no data to send to the Evo.','warn');return;}
+  let device=null;
+  try{
+    setStatus('Select your TI-84 Evo in the WebUSB device chooser…');
+    device=await EvoWebUsbTransport.chooseDevice();
+    setStatus('Connected to TI-84 Evo. Checking L1–L6 for existing data…');
+    const directory=await readEvoDirectoryWebUsb(device),map=evoDirectoryStandardListMap(directory);
+    const overwrites=outgoing.filter(x=>{const item=map.get(x.index+1);return item&&!evoDirectoryListIsEmpty(item);});
+    if(overwrites.length){const names=overwrites.map(x=>x.name).join(', ');if(!(await confirmClearLists(`The Evo already contains data in ${names}. Overwrite ${names}?`))){setStatus('Bulk Evo send canceled.','warn');return;}}
+    let sent=0,failed=0;const failures=[];
+    for(const item of outgoing){
+      try{
+        setStatus(`Sending ${item.name} to TI-84 Evo…`);
+        const file=make8xl2(item.values,item.name),existing=map.get(item.index+1)||null,preferredArchive=existing?!!existing.mem:false;
+        try{await evoWebUsbPut(device,`hh01/xfr/var?memtarget=${preferredArchive?1:0}&policy=1`,file,item.name);}
+        catch(err){const code=evoErrorCodeFromMessage(err?.message);if(!preferredArchive&&(code==='PM'||code==='DP'))await evoWebUsbPut(device,'hh01/xfr/var?memtarget=1&policy=1',file,`${item.name} Archive retry`);else throw err;}
+        sent++;
+      }catch(err){failed++;failures.push(`${item.name}: ${err.message}`);evoUsbError(`Bulk send ${item.name} failed`,err);}
+    }
+    let msg=`Sent ${sent} populated editor list${sent===1?'':'s'} to Evo as L1–L6.`;if(failed)msg+=` ${failed} failed: ${failures.join(' ')}`;setStatus(msg,failed?'warn':'good');
+  }catch(err){
+    evoUsbError('Bulk Evo send failed',err);
+    if(err?.name==='NotFoundError')setStatus('Evo connection canceled.','warn');
+    else if(err?.name==='SecurityError')setStatus(`Browser security blocked calculator access: ${err.message} Use HTTPS or localhost in a supported desktop browser.`,'bad');
+    else setStatus(`Evo send failed: ${err.message}`,'bad');
+  }finally{
+    if(device?.opened)try{await usbReleaseAndClose(device,'TI-84 Evo USB final',evoUsbWarn);}catch{}
+  }
+}
+async function importListsFromEvo(){
+  let device=null;
+  const runId=Date.now().toString(36);
+  try{
+    evoTrace(`Import run ${runId} begin`,{
+      mode:'webusb',userAgent:navigator.userAgent,
+      secureContext:isSecureContext,evoCdcPrimedThisPage
+    });
+    setStatus('Preparing Evo CDC and WebUSB connection…');
+    device=await prepareEvoWebUsbImport();
+    setStatus('Connected to TI-84 Evo via WebUSB. Reading list directory…');
+    // Do not silently switch to Web Serial. CDC serial is only used to
+    // initialize the calculator before the real raw-WebUSB import begins.
+    const directory=await readEvoDirectoryWebUsb(device);
+    const allListEntries=Array.isArray(directory?.data)?directory.data.filter(item=>Number(item?.type)===1):[];
+    const nonStandardSkipped=allListEntries.filter(item=>evoStandardListNumber(item)===null).length;
+    const standardEntries=allListEntries.filter(item=>evoStandardListNumber(item)!==null);
+    const emptySkipped=standardEntries.filter(evoDirectoryListIsEmpty).length;
+    const listEntries=standardEntries.filter(item=>!evoDirectoryListIsEmpty(item));
+    listEntries.sort((a,b)=>evoListSortKey(a)-evoListSortKey(b));
+    evoTrace(`Import run ${runId} directory filtering`,{
+      allLists:allListEntries.map(x=>({name:evoDirectoryListName(x),size:x?.size,len:x?.len,mem:x?.mem})),
+      selected:listEntries.map(evoDirectoryListName),emptySkipped,nonStandardSkipped,
+      emptyRule:'standard list length 0, or directory size 0/4 bytes'
+    });
+    if(!listEntries.length){
+      let msg='Connected to the Evo, but no populated L1–L6 lists were found.';
+      if(emptySkipped)msg+=` Skipped ${emptySkipped} empty standard list${emptySkipped===1?'':'s'}.`;
+      if(nonStandardSkipped)msg+=` Ignored ${nonStandardSkipped} non-L1–L6 list${nonStandardSkipped===1?'':'s'}.`;
+      setStatus(msg,'warn');return;
+    }
+    let imported=0,failed=0,skipped=0;
+    const failures=[];
+    for(const item of listEntries){
+      const name=evoDirectoryListName(item),slot=nextImportSlot(name),resource=`hh01/get/hh01/xfr/${evoVariableResource(item)}`;
+      if(slot<0){skipped++;continue;}
+      try{
+        setStatus(`Reading ${name} from TI-84 Evo via WebUSB…`);
+        evoTrace(`Import run ${runId} ${name} begin`,{resource,directorySize:item?.size,directoryLen:item?.len,mem:item?.mem});
+        const body=await evoWebUsbGet(device,resource,name);
+        evoTrace(`Import run ${runId} ${name} body received`,{bytes:body.length,checksum:`0x${evoChecksum(body).toString(16).padStart(4,'0')}`,hex:EVO_USB_TRACE_BYTES?evoHex(body):undefined});
+        const parsed=parse8xl2(addEvoFileChecksum(body));
+        evoTrace(`Import run ${runId} ${name} parsed`,{tiName:parsed.tiName,values:parsed.values.length,checksumOK:parsed.checksumOK,firstValues:parsed.values.slice(0,8)});
+        Object.assign(columns[slot],{name,tiName:parsed.tiName||name||`L${slot+1}`,values:parsed.values,loaded:true,sourceFormat:'Evo USB',sourceFile:`TI-84 Evo:${name}`});
+        ensureVisibleColumns(slot+1);imported++;
+      }catch(err){
+        failed++;failures.push(`${name}: ${err.message}`);
+        evoUsbError(`Import run ${runId} ${name} failed`,{message:err?.message,name:err?.name,stack:err?.stack});
+      }
+    }
+    renderAll();
+    let msg=`Imported ${imported} Evo list${imported===1?'':'s'} via WebUSB.`;
+    if(emptySkipped)msg+=` Skipped ${emptySkipped} empty L1–L6 list${emptySkipped===1?'':'s'}.`;
+    if(nonStandardSkipped)msg+=` Ignored ${nonStandardSkipped} non-L1–L6 list${nonStandardSkipped===1?'':'s'}.`;
+    if(skipped)msg+=` ${skipped} populated standard list${skipped===1?' was':'s were'} skipped because all ${MAX_COLUMNS} editor slots were occupied.`;
+    if(failed)msg+=` ${failed} failed: ${failures.join(' ')}`;
+    setStatus(msg,failed?'warn':'good');
+    evoTrace(`Import run ${runId} complete`,{mode:'webusb',imported,failed,skipped,emptySkipped,nonStandardSkipped});
+  }catch(err){
+    evoUsbError(`Import run ${runId} exception`,{message:err?.message,name:err?.name,stack:err?.stack});
+    if(err?.name==='PermissionRetryRequired')setStatus(err.message,'warn');
+    else if(err?.name==='NotFoundError')setStatus('Evo connection canceled.','warn');
+    else if(err?.name==='SecurityError')setStatus(`Browser security blocked calculator access: ${err.message} Use HTTPS or localhost in a supported desktop browser.`,'bad');
+    else setStatus(`Evo WebUSB import failed: ${err.message}`,'bad');
+  }finally{
+    if(device)evoTrace(`Import run ${runId} intentionally skipped final hardware reset`,{reason:'Avoid upsetting OS-owned CDC serial interface'});
+    if(device?.opened)try{await usbReleaseAndClose(device,'TI-84 Evo USB final',evoUsbWarn);}catch(err){evoUsbError(`Import run ${runId} final WebUSB cleanup failed`,err);}
+    evoTrace(`Import run ${runId} final cleanup`,{deviceOpened:device?.opened??false});
+  }
+}
+
 // ---------- file/UI workflow ----------
 async function loadFileIntoColumn(file,index){
   try{
@@ -667,6 +2007,7 @@ async function loadFileIntoColumn(file,index){
       sourceFormat:'.'+ext,
       sourceFile:file.name
     });
+    ensureVisibleColumns(index+1);
     renderAll();
     const checksumNote=parsed.checksumOK?'':' Checksum mismatch detected; readable data was still loaded.';
     setStatus(`Loaded ${file.name} into List ${index+1} (${parsed.values.length} value${parsed.values.length===1?'':'s'}).${checksumNote}`,parsed.checksumOK?'good':'warn');
@@ -708,12 +2049,13 @@ async function loadFiles(fileList, expectedExt=null){
       const bytes=new Uint8Array(await file.arrayBuffer());
       const parsed=ext==='8xl'?parse8xl(bytes):parse8xl2(bytes);
       let slot=-1;
-      const m=String(parsed.tiName||'').match(/^L([1-6])$/i);
+      const m=String(parsed.tiName||'').match(/^L((?:[1-9]|1[0-2]))$/i);
       if(m){ const wanted=Number(m[1])-1; if(!columns[wanted].loaded && columns[wanted].values.length===0)slot=wanted; }
       if(slot<0)slot=columns.findIndex(c=>!c.loaded && c.values.length===0);
-      if(slot<0)throw new Error('No empty list remains. Clear a list first.');
+      if(slot<0)throw new Error(`No empty list remains among the ${MAX_COLUMNS} editor slots. Clear a list first.`);
       const base=file.name.replace(/\.(?:8xl2|8xl)$/i,'');
       Object.assign(columns[slot],{name:base,tiName:parsed.tiName||`L${slot+1}`,values:parsed.values,loaded:true,sourceFormat:'.'+ext,sourceFile:file.name});
+      ensureVisibleColumns(slot+1);
       loaded++; if(!parsed.checksumOK)badChecksums++;
     }catch(err){ failed++; messages.push(`${file.name}: ${err.message}`); }
   }
@@ -771,17 +2113,22 @@ bulkDrop.addEventListener('drop',async e=>{
   e.preventDefault();e.stopPropagation();bulkDrop.classList.remove('drag-over');
   if(e.dataTransfer&&e.dataTransfer.files)await loadFiles(e.dataTransfer.files);
 });
+$('#importPlusCeWebUsb').addEventListener('click',()=>importListsFromPlusCe());
+$('#importEvoWebUsb').addEventListener('click',()=>importListsFromEvo());
 $('#exportAll8xl').addEventListener('click',()=>exportAll('8xl'));
 $('#exportAll8xl2').addEventListener('click',()=>exportAll('8xl2'));
+$('#sendAllEvo').addEventListener('click',()=>sendL1ToL6ToEvo());
+$('#sendAllPlusCe').addEventListener('click',()=>sendAllListsToPlusCe());
 $('#clearAll').addEventListener('click',async()=>{
   if (!(await confirmClearLists())) return;
   columns.forEach((_,index)=>clearColumn(index));
+  visibleColumns = DEFAULT_COLUMNS;
   renderAll();
-  setStatus('All list data cleared.','good');
+  setStatus('All list data cleared. Showing Lists 1–6.','good');
 });
 
 // Expose the format core for browser-console testing and future extension.
-window.TIListFormats={parse8xl,make8xl,parse8xl2,make8xl2,tiRealFromString,tiRealToString,evoChecksum};
+window.TIListFormats={parse8xl,make8xl,parse8xl2,make8xl2,tiRealFromString,tiRealToString,evoChecksum,evoMakePacket,evoParsePacket,evoKermitEncode,evoKermitDecode,evoSplitElementAligned,parseCeListPayload,ceMakeRawPacket,ceParseRawPacket,ceMakeVirtualPacket,ceParseVarHeader,ceNormalizeListName,ceStandardListNumber,ceMakeListPayload,ceMakeRtsPayload,ceTargetName,ceAssertDataAck};
 renderAll();
 })();
 </script>
