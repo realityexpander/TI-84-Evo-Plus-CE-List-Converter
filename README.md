@@ -2,7 +2,7 @@
 
 A single-page, browser-based editor and converter for TI calculator real-number list files.
 
-<img width="600" height="961" alt="image" src="https://github.com/user-attachments/assets/12cbb662-b37b-409e-9288-800e152c087d" />
+<img width="600" alt="image" src="https://github.com/user-attachments/assets/12cbb662-b37b-409e-9288-800e152c087d" />
 
 The app can import **TI-84 Plus CE `.8xl`** list files and **TI-84 Evo `.8xl2`** list files, display the values in editable columns, and export each list in either format.
 
